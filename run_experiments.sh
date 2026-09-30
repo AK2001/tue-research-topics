@@ -28,7 +28,7 @@
 
 # ------------------------- settings you may change -------------------------
 SEEDS=(0 1 2)          # 3 seeds; use (0 1 2 3 4) for 5 seeds
-BETA_NEG=0.1           # beta for the negative-policy method
+BETA_NEG=0.5           # beta for the negative-policy method
 CORL_DIR=$HOME/Repositories/CORL
 # ---------------------------------------------------------------------------
 
