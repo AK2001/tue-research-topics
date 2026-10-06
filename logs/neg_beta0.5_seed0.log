@@ -1,0 +1,25 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Config: neg=True, beta=0.5, steps=30000, data=50000, seed=0
+Loading existing d3rlpy Pendulum dataset ...
+[2m2026-09-24 23:43.27[0m [[32m[1minfo     [0m] [1mSignatures have been automatically determined.[0m [36maction_signature[0m=[35mSignature(dtype=[dtype('float32')], shape=[(1,)])[0m [36mobservation_signature[0m=[35mSignature(dtype=[dtype('float32')], shape=[(3,)])[0m [36mreward_signature[0m=[35mSignature(dtype=[dtype('float32')], shape=[(1,)])[0m
+[2m2026-09-24 23:43.27[0m [[32m[1minfo     [0m] [1mAction-space has been automatically determined.[0m [36maction_space[0m=[35m<ActionSpace.CONTINUOUS: 1>[0m
+[2m2026-09-24 23:43.27[0m [[32m[1minfo     [0m] [1mAction size has been automatically determined.[0m [36maction_size[0m=[35m1[0m
+Dataset size: 99500 transitions
+Reward std (used to normalize): 2.543
+Training...
+  step 5000/30000 | critic_loss=0.051 | danger_critic_loss=0.026 | neg_actor_loss=-1.959 | avoidance=-0.054 | actor_loss=3.079
+  step 10000/30000 | critic_loss=0.275 | danger_critic_loss=0.318 | neg_actor_loss=-1.963 | avoidance=-0.100 | actor_loss=2.931
+  step 15000/30000 | critic_loss=0.177 | danger_critic_loss=0.459 | neg_actor_loss=-1.840 | avoidance=-0.252 | actor_loss=3.057
+  step 20000/30000 | critic_loss=0.321 | danger_critic_loss=1.249 | neg_actor_loss=-1.948 | avoidance=-0.222 | actor_loss=2.937
+  step 25000/30000 | critic_loss=0.370 | danger_critic_loss=1.435 | neg_actor_loss=-1.864 | avoidance=-0.246 | actor_loss=3.187
+  step 30000/30000 | critic_loss=0.199 | danger_critic_loss=1.069 | neg_actor_loss=-1.980 | avoidance=-0.218 | actor_loss=2.881
+
+----- RESULTS -----
+scores: [-0.7, -128.6, -123.6, -115.3, -333.9, -253.1, -122.6, -253.1, -123.2, -236.2, -236.0, -119.7, -122.1, -122.6, -3.2, -123.8, -116.8, -224.9, -126.3, -116.7]
+mean:   -150.1
+median: -123.4
+worst:  -333.9
+best:   -0.7

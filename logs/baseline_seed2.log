@@ -1,0 +1,25 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Config: neg=False, beta=0.1, steps=30000, data=50000, seed=2
+Loading existing d3rlpy Pendulum dataset ...
+[2m2026-09-24 23:40.10[0m [[32m[1minfo     [0m] [1mSignatures have been automatically determined.[0m [36maction_signature[0m=[35mSignature(dtype=[dtype('float32')], shape=[(1,)])[0m [36mobservation_signature[0m=[35mSignature(dtype=[dtype('float32')], shape=[(3,)])[0m [36mreward_signature[0m=[35mSignature(dtype=[dtype('float32')], shape=[(1,)])[0m
+[2m2026-09-24 23:40.10[0m [[32m[1minfo     [0m] [1mAction-space has been automatically determined.[0m [36maction_space[0m=[35m<ActionSpace.CONTINUOUS: 1>[0m
+[2m2026-09-24 23:40.10[0m [[32m[1minfo     [0m] [1mAction size has been automatically determined.[0m [36maction_size[0m=[35m1[0m
+Dataset size: 99500 transitions
+Reward std (used to normalize): 2.543
+Training...
+  step 5000/30000 | critic_loss=0.127 | actor_loss=3.099
+  step 10000/30000 | critic_loss=0.215 | actor_loss=3.123
+  step 15000/30000 | critic_loss=0.391 | actor_loss=3.102
+  step 20000/30000 | critic_loss=0.251 | actor_loss=3.083
+  step 25000/30000 | critic_loss=0.372 | actor_loss=3.047
+  step 30000/30000 | critic_loss=0.421 | actor_loss=2.988
+
+----- RESULTS -----
+scores: [-125.2, -116.8, -343.2, -263.1, -124.4, -265.9, -251.5, -246.4, -243.8, -121.5, -124.0, -124.8, -3.7, -125.4, -118.0, -231.1, -127.0, -117.6, -3.7, -124.5]
+mean:   -160.1
+median: -125.0
+worst:  -343.2
+best:   -3.7
