@@ -1,0 +1,1027 @@
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+Warning: FrankaKitchen failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'dm_control'
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+Warning: GymBullet failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'pybullet_envs'
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+load datafile:   0%|          | 0/11 [00:00<?, ?it/s]load datafile:  27%|██▋       | 3/11 [00:00<00:00, 15.22it/s]load datafile:  45%|████▌     | 5/11 [00:00<00:00, 14.89it/s]load datafile:  64%|██████▎   | 7/11 [00:00<00:00, 14.54it/s]load datafile:  82%|████████▏ | 9/11 [00:00<00:00, 13.97it/s]load datafile: 100%|██████████| 11/11 [00:00<00:00, 17.37it/s]
+Dataset size: 401598
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+Training TD3 + BC, Env: hopper-medium-replay-v2, Seed: 2, beta: 0.0
+---------------------------------------
+Time steps: 5000
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+Evaluation over 10 episodes: 197.178 , D4RL score: 6.681
+Train stats: {'critic_loss': 1.1520403623580933, 'actor_loss': -2.288468837738037}
+---------------------------------------
+Time steps: 10000
+---------------------------------------
+Evaluation over 10 episodes: 733.705 , D4RL score: 23.167
+Train stats: {'critic_loss': 2.7298355102539062, 'actor_loss': -2.305966377258301}
+---------------------------------------
+Time steps: 15000
+---------------------------------------
+Evaluation over 10 episodes: 1071.702 , D4RL score: 33.552
+Train stats: {'critic_loss': 3.245518684387207, 'actor_loss': -2.3281407356262207}
+---------------------------------------
+Time steps: 20000
+---------------------------------------
+Evaluation over 10 episodes: 406.405 , D4RL score: 13.110
+Train stats: {'critic_loss': 20.14493179321289, 'actor_loss': -2.329841136932373}
+---------------------------------------
+Time steps: 25000
+---------------------------------------
+Evaluation over 10 episodes: 325.897 , D4RL score: 10.636
+Train stats: {'critic_loss': 10.993359565734863, 'actor_loss': -2.3272039890289307}
+---------------------------------------
+Time steps: 30000
+---------------------------------------
+Evaluation over 10 episodes: 474.669 , D4RL score: 15.208
+Train stats: {'critic_loss': 9.152466773986816, 'actor_loss': -2.3470001220703125}
+---------------------------------------
+Time steps: 35000
+---------------------------------------
+Evaluation over 10 episodes: 547.071 , D4RL score: 17.432
+Train stats: {'critic_loss': 9.957837104797363, 'actor_loss': -2.3505115509033203}
+---------------------------------------
+Time steps: 40000
+---------------------------------------
+Evaluation over 10 episodes: 258.329 , D4RL score: 8.560
+Train stats: {'critic_loss': 15.161911010742188, 'actor_loss': -2.33207106590271}
+---------------------------------------
+Time steps: 45000
+---------------------------------------
+Evaluation over 10 episodes: 451.255 , D4RL score: 14.488
+Train stats: {'critic_loss': 16.879194259643555, 'actor_loss': -2.3404107093811035}
+---------------------------------------
+Time steps: 50000
+---------------------------------------
+Evaluation over 10 episodes: 1607.491 , D4RL score: 50.015
+Train stats: {'critic_loss': 12.918329238891602, 'actor_loss': -2.3533718585968018}
+---------------------------------------
+Time steps: 55000
+---------------------------------------
+Evaluation over 10 episodes: 624.309 , D4RL score: 19.805
+Train stats: {'critic_loss': 72.23155212402344, 'actor_loss': -2.3534936904907227}
+---------------------------------------
+Time steps: 60000
+---------------------------------------
+Evaluation over 10 episodes: 458.402 , D4RL score: 14.708
+Train stats: {'critic_loss': 14.44111442565918, 'actor_loss': -2.3539443016052246}
+---------------------------------------
+Time steps: 65000
+---------------------------------------
+Evaluation over 10 episodes: 648.954 , D4RL score: 20.563
+Train stats: {'critic_loss': 18.60321617126465, 'actor_loss': -2.3491291999816895}
+---------------------------------------
+Time steps: 70000
+---------------------------------------
+Evaluation over 10 episodes: 391.911 , D4RL score: 12.665
+Train stats: {'critic_loss': 21.876808166503906, 'actor_loss': -2.357225179672241}
+---------------------------------------
+Time steps: 75000
+---------------------------------------
+Evaluation over 10 episodes: 778.814 , D4RL score: 24.553
+Train stats: {'critic_loss': 24.870052337646484, 'actor_loss': -2.350879192352295}
+---------------------------------------
+Time steps: 80000
+---------------------------------------
+Evaluation over 10 episodes: 1158.430 , D4RL score: 36.217
+Train stats: {'critic_loss': 44.8227653503418, 'actor_loss': -2.318760395050049}
+---------------------------------------
+Time steps: 85000
+---------------------------------------
+Evaluation over 10 episodes: 1350.705 , D4RL score: 42.125
+Train stats: {'critic_loss': 19.096179962158203, 'actor_loss': -2.3510594367980957}
+---------------------------------------
+Time steps: 90000
+---------------------------------------
+Evaluation over 10 episodes: 1030.229 , D4RL score: 32.278
+Train stats: {'critic_loss': 44.355743408203125, 'actor_loss': -2.3493316173553467}
+---------------------------------------
+Time steps: 95000
+---------------------------------------
+Evaluation over 10 episodes: 1083.607 , D4RL score: 33.918
+Train stats: {'critic_loss': 25.538599014282227, 'actor_loss': -2.3649022579193115}
+---------------------------------------
+Time steps: 100000
+---------------------------------------
+Evaluation over 10 episodes: 705.671 , D4RL score: 22.305
+Train stats: {'critic_loss': 16.120807647705078, 'actor_loss': -2.3422720432281494}
+---------------------------------------
+Time steps: 105000
+---------------------------------------
+Evaluation over 10 episodes: 1987.487 , D4RL score: 61.690
+Train stats: {'critic_loss': 19.158138275146484, 'actor_loss': -2.3587646484375}
+---------------------------------------
+Time steps: 110000
+---------------------------------------
+Evaluation over 10 episodes: 1925.485 , D4RL score: 59.785
+Train stats: {'critic_loss': 30.910926818847656, 'actor_loss': -2.3577749729156494}
+---------------------------------------
+Time steps: 115000
+---------------------------------------
+Evaluation over 10 episodes: 847.858 , D4RL score: 26.674
+Train stats: {'critic_loss': 27.023754119873047, 'actor_loss': -2.346872329711914}
+---------------------------------------
+Time steps: 120000
+---------------------------------------
+Evaluation over 10 episodes: 2268.192 , D4RL score: 70.315
+Train stats: {'critic_loss': 19.47447967529297, 'actor_loss': -2.347115993499756}
+---------------------------------------
+Time steps: 125000
+---------------------------------------
+Evaluation over 10 episodes: 2380.415 , D4RL score: 73.764
+Train stats: {'critic_loss': 27.509685516357422, 'actor_loss': -2.336920738220215}
+---------------------------------------
+Time steps: 130000
+---------------------------------------
+Evaluation over 10 episodes: 1520.358 , D4RL score: 47.337
+Train stats: {'critic_loss': 23.69363784790039, 'actor_loss': -2.3516149520874023}
+---------------------------------------
+Time steps: 135000
+---------------------------------------
+Evaluation over 10 episodes: 2142.180 , D4RL score: 66.444
+Train stats: {'critic_loss': 29.727081298828125, 'actor_loss': -2.3414418697357178}
+---------------------------------------
+Time steps: 140000
+---------------------------------------
+Evaluation over 10 episodes: 1259.878 , D4RL score: 39.334
+Train stats: {'critic_loss': 27.840370178222656, 'actor_loss': -2.343019485473633}
+---------------------------------------
+Time steps: 145000
+---------------------------------------
+Evaluation over 10 episodes: 2812.132 , D4RL score: 87.028
+Train stats: {'critic_loss': 23.179607391357422, 'actor_loss': -2.354372978210449}
+---------------------------------------
+Time steps: 150000
+---------------------------------------
+Evaluation over 10 episodes: 1423.640 , D4RL score: 44.366
+Train stats: {'critic_loss': 30.40499496459961, 'actor_loss': -2.3658652305603027}
+---------------------------------------
+Time steps: 155000
+---------------------------------------
+Evaluation over 10 episodes: 1022.368 , D4RL score: 32.036
+Train stats: {'critic_loss': 20.02879524230957, 'actor_loss': -2.3355517387390137}
+---------------------------------------
+Time steps: 160000
+---------------------------------------
+Evaluation over 10 episodes: 1953.489 , D4RL score: 60.646
+Train stats: {'critic_loss': 20.771718978881836, 'actor_loss': -2.3727967739105225}
+---------------------------------------
+Time steps: 165000
+---------------------------------------
+Evaluation over 10 episodes: 1567.206 , D4RL score: 48.777
+Train stats: {'critic_loss': 34.27269744873047, 'actor_loss': -2.354849338531494}
+---------------------------------------
+Time steps: 170000
+---------------------------------------
+Evaluation over 10 episodes: 1715.318 , D4RL score: 53.328
+Train stats: {'critic_loss': 34.34058380126953, 'actor_loss': -2.3602006435394287}
+---------------------------------------
+Time steps: 175000
+---------------------------------------
+Evaluation over 10 episodes: 964.374 , D4RL score: 30.254
+Train stats: {'critic_loss': 23.612545013427734, 'actor_loss': -2.363530158996582}
+---------------------------------------
+Time steps: 180000
+---------------------------------------
+Evaluation over 10 episodes: 2571.904 , D4RL score: 79.647
+Train stats: {'critic_loss': 40.17152404785156, 'actor_loss': -2.344158411026001}
+---------------------------------------
+Time steps: 185000
+---------------------------------------
+Evaluation over 10 episodes: 1409.441 , D4RL score: 43.929
+Train stats: {'critic_loss': 19.789085388183594, 'actor_loss': -2.3685240745544434}
+---------------------------------------
+Time steps: 190000
+---------------------------------------
+Evaluation over 10 episodes: 1048.618 , D4RL score: 32.843
+Train stats: {'critic_loss': 29.91557502746582, 'actor_loss': -2.3419101238250732}
+---------------------------------------
+Time steps: 195000
+---------------------------------------
+Evaluation over 10 episodes: 1817.820 , D4RL score: 56.477
+Train stats: {'critic_loss': 18.36779022216797, 'actor_loss': -2.3633735179901123}
+---------------------------------------
+Time steps: 200000
+---------------------------------------
+Evaluation over 10 episodes: 1856.919 , D4RL score: 57.679
+Train stats: {'critic_loss': 18.82826042175293, 'actor_loss': -2.3730623722076416}
+---------------------------------------
+Time steps: 205000
+---------------------------------------
+Evaluation over 10 episodes: 1442.515 , D4RL score: 44.946
+Train stats: {'critic_loss': 21.220500946044922, 'actor_loss': -2.359971046447754}
+---------------------------------------
+Time steps: 210000
+---------------------------------------
+Evaluation over 10 episodes: 1669.588 , D4RL score: 51.923
+Train stats: {'critic_loss': 28.499778747558594, 'actor_loss': -2.364135503768921}
+---------------------------------------
+Time steps: 215000
+---------------------------------------
+Evaluation over 10 episodes: 2345.010 , D4RL score: 72.676
+Train stats: {'critic_loss': 21.960472106933594, 'actor_loss': -2.3407576084136963}
+---------------------------------------
+Time steps: 220000
+---------------------------------------
+Evaluation over 10 episodes: 1216.895 , D4RL score: 38.013
+Train stats: {'critic_loss': 20.76297950744629, 'actor_loss': -2.350795269012451}
+---------------------------------------
+Time steps: 225000
+---------------------------------------
+Evaluation over 10 episodes: 2596.506 , D4RL score: 80.403
+Train stats: {'critic_loss': 23.504314422607422, 'actor_loss': -2.340564727783203}
+---------------------------------------
+Time steps: 230000
+---------------------------------------
+Evaluation over 10 episodes: 2172.050 , D4RL score: 67.361
+Train stats: {'critic_loss': 21.838584899902344, 'actor_loss': -2.352921485900879}
+---------------------------------------
+Time steps: 235000
+---------------------------------------
+Evaluation over 10 episodes: 1232.763 , D4RL score: 38.501
+Train stats: {'critic_loss': 19.11090087890625, 'actor_loss': -2.3700344562530518}
+---------------------------------------
+Time steps: 240000
+---------------------------------------
+Evaluation over 10 episodes: 1535.478 , D4RL score: 47.802
+Train stats: {'critic_loss': 29.529991149902344, 'actor_loss': -2.3716280460357666}
+---------------------------------------
+Time steps: 245000
+---------------------------------------
+Evaluation over 10 episodes: 2002.121 , D4RL score: 62.140
+Train stats: {'critic_loss': 24.892173767089844, 'actor_loss': -2.3528876304626465}
+---------------------------------------
+Time steps: 250000
+---------------------------------------
+Evaluation over 10 episodes: 2722.356 , D4RL score: 84.270
+Train stats: {'critic_loss': 17.798770904541016, 'actor_loss': -2.348660469055176}
+---------------------------------------
+Time steps: 255000
+---------------------------------------
+Evaluation over 10 episodes: 1271.240 , D4RL score: 39.683
+Train stats: {'critic_loss': 32.743141174316406, 'actor_loss': -2.3418917655944824}
+---------------------------------------
+Time steps: 260000
+---------------------------------------
+Evaluation over 10 episodes: 2946.948 , D4RL score: 91.171
+Train stats: {'critic_loss': 28.188505172729492, 'actor_loss': -2.376455068588257}
+---------------------------------------
+Time steps: 265000
+---------------------------------------
+Evaluation over 10 episodes: 1824.849 , D4RL score: 56.693
+Train stats: {'critic_loss': 20.256940841674805, 'actor_loss': -2.3647987842559814}
+---------------------------------------
+Time steps: 270000
+---------------------------------------
+Evaluation over 10 episodes: 2505.972 , D4RL score: 77.621
+Train stats: {'critic_loss': 21.059003829956055, 'actor_loss': -2.3572912216186523}
+---------------------------------------
+Time steps: 275000
+---------------------------------------
+Evaluation over 10 episodes: 3053.550 , D4RL score: 94.446
+Train stats: {'critic_loss': 23.117427825927734, 'actor_loss': -2.3646271228790283}
+---------------------------------------
+Time steps: 280000
+---------------------------------------
+Evaluation over 10 episodes: 1060.923 , D4RL score: 33.221
+Train stats: {'critic_loss': 21.652307510375977, 'actor_loss': -2.3414382934570312}
+---------------------------------------
+Time steps: 285000
+---------------------------------------
+Evaluation over 10 episodes: 893.712 , D4RL score: 28.083
+Train stats: {'critic_loss': 24.696989059448242, 'actor_loss': -2.3542044162750244}
+---------------------------------------
+Time steps: 290000
+---------------------------------------
+Evaluation over 10 episodes: 1842.044 , D4RL score: 57.222
+Train stats: {'critic_loss': 24.385295867919922, 'actor_loss': -2.3496055603027344}
+---------------------------------------
+Time steps: 295000
+---------------------------------------
+Evaluation over 10 episodes: 2458.136 , D4RL score: 76.152
+Train stats: {'critic_loss': 31.71026611328125, 'actor_loss': -2.369241714477539}
+---------------------------------------
+Time steps: 300000
+---------------------------------------
+Evaluation over 10 episodes: 1273.433 , D4RL score: 39.750
+Train stats: {'critic_loss': 25.10331153869629, 'actor_loss': -2.3593547344207764}
+---------------------------------------
+Time steps: 305000
+---------------------------------------
+Evaluation over 10 episodes: 2467.322 , D4RL score: 76.434
+Train stats: {'critic_loss': 29.076751708984375, 'actor_loss': -2.3609635829925537}
+---------------------------------------
+Time steps: 310000
+---------------------------------------
+Evaluation over 10 episodes: 1492.090 , D4RL score: 46.469
+Train stats: {'critic_loss': 17.31479835510254, 'actor_loss': -2.367387294769287}
+---------------------------------------
+Time steps: 315000
+---------------------------------------
+Evaluation over 10 episodes: 2844.044 , D4RL score: 88.009
+Train stats: {'critic_loss': 18.625877380371094, 'actor_loss': -2.3587393760681152}
+---------------------------------------
+Time steps: 320000
+---------------------------------------
+Evaluation over 10 episodes: 1441.968 , D4RL score: 44.929
+Train stats: {'critic_loss': 35.61259460449219, 'actor_loss': -2.3462941646575928}
+---------------------------------------
+Time steps: 325000
+---------------------------------------
+Evaluation over 10 episodes: 3093.303 , D4RL score: 95.668
+Train stats: {'critic_loss': 26.080541610717773, 'actor_loss': -2.3598670959472656}
+---------------------------------------
+Time steps: 330000
+---------------------------------------
+Evaluation over 10 episodes: 1207.770 , D4RL score: 37.733
+Train stats: {'critic_loss': 21.325241088867188, 'actor_loss': -2.372319459915161}
+---------------------------------------
+Time steps: 335000
+---------------------------------------
+Evaluation over 10 episodes: 2976.362 , D4RL score: 92.075
+Train stats: {'critic_loss': 21.499418258666992, 'actor_loss': -2.352297067642212}
+---------------------------------------
+Time steps: 340000
+---------------------------------------
+Evaluation over 10 episodes: 1371.832 , D4RL score: 42.774
+Train stats: {'critic_loss': 24.679515838623047, 'actor_loss': -2.363463878631592}
+---------------------------------------
+Time steps: 345000
+---------------------------------------
+Evaluation over 10 episodes: 2622.527 , D4RL score: 81.203
+Train stats: {'critic_loss': 37.17473602294922, 'actor_loss': -2.358217716217041}
+---------------------------------------
+Time steps: 350000
+---------------------------------------
+Evaluation over 10 episodes: 3043.118 , D4RL score: 94.126
+Train stats: {'critic_loss': 20.882272720336914, 'actor_loss': -2.346949815750122}
+---------------------------------------
+Time steps: 355000
+---------------------------------------
+Evaluation over 10 episodes: 1427.253 , D4RL score: 44.477
+Train stats: {'critic_loss': 28.9224853515625, 'actor_loss': -2.35783052444458}
+---------------------------------------
+Time steps: 360000
+---------------------------------------
+Evaluation over 10 episodes: 3170.332 , D4RL score: 98.035
+Train stats: {'critic_loss': 20.33725929260254, 'actor_loss': -2.3565192222595215}
+---------------------------------------
+Time steps: 365000
+---------------------------------------
+Evaluation over 10 episodes: 3015.946 , D4RL score: 93.291
+Train stats: {'critic_loss': 21.66973114013672, 'actor_loss': -2.379239797592163}
+---------------------------------------
+Time steps: 370000
+---------------------------------------
+Evaluation over 10 episodes: 2122.405 , D4RL score: 65.836
+Train stats: {'critic_loss': 18.48013687133789, 'actor_loss': -2.361783981323242}
+---------------------------------------
+Time steps: 375000
+---------------------------------------
+Evaluation over 10 episodes: 1095.491 , D4RL score: 34.283
+Train stats: {'critic_loss': 40.43223571777344, 'actor_loss': -2.356110095977783}
+---------------------------------------
+Time steps: 380000
+---------------------------------------
+Evaluation over 10 episodes: 1162.039 , D4RL score: 36.328
+Train stats: {'critic_loss': 24.41750717163086, 'actor_loss': -2.3714635372161865}
+---------------------------------------
+Time steps: 385000
+---------------------------------------
+Evaluation over 10 episodes: 2355.967 , D4RL score: 73.012
+Train stats: {'critic_loss': 16.120262145996094, 'actor_loss': -2.3591127395629883}
+---------------------------------------
+Time steps: 390000
+---------------------------------------
+Evaluation over 10 episodes: 2766.277 , D4RL score: 85.620
+Train stats: {'critic_loss': 24.179744720458984, 'actor_loss': -2.357245445251465}
+---------------------------------------
+Time steps: 395000
+---------------------------------------
+Evaluation over 10 episodes: 1630.844 , D4RL score: 50.732
+Train stats: {'critic_loss': 23.381603240966797, 'actor_loss': -2.359442710876465}
+---------------------------------------
+Time steps: 400000
+---------------------------------------
+Evaluation over 10 episodes: 1806.815 , D4RL score: 56.139
+Train stats: {'critic_loss': 44.822174072265625, 'actor_loss': -2.36281681060791}
+---------------------------------------
+Time steps: 405000
+---------------------------------------
+Evaluation over 10 episodes: 1437.785 , D4RL score: 44.800
+Train stats: {'critic_loss': 20.111183166503906, 'actor_loss': -2.3738489151000977}
+---------------------------------------
+Time steps: 410000
+---------------------------------------
+Evaluation over 10 episodes: 3117.087 , D4RL score: 96.399
+Train stats: {'critic_loss': 24.741558074951172, 'actor_loss': -2.3533759117126465}
+---------------------------------------
+Time steps: 415000
+---------------------------------------
+Evaluation over 10 episodes: 1409.684 , D4RL score: 43.937
+Train stats: {'critic_loss': 18.613489151000977, 'actor_loss': -2.3642966747283936}
+---------------------------------------
+Time steps: 420000
+---------------------------------------
+Evaluation over 10 episodes: 2224.781 , D4RL score: 68.982
+Train stats: {'critic_loss': 22.434051513671875, 'actor_loss': -2.366708517074585}
+---------------------------------------
+Time steps: 425000
+---------------------------------------
+Evaluation over 10 episodes: 1576.726 , D4RL score: 49.069
+Train stats: {'critic_loss': 21.113014221191406, 'actor_loss': -2.372377634048462}
+---------------------------------------
+Time steps: 430000
+---------------------------------------
+Evaluation over 10 episodes: 2753.247 , D4RL score: 85.219
+Train stats: {'critic_loss': 23.948272705078125, 'actor_loss': -2.34928035736084}
+---------------------------------------
+Time steps: 435000
+---------------------------------------
+Evaluation over 10 episodes: 2067.713 , D4RL score: 64.155
+Train stats: {'critic_loss': 26.577369689941406, 'actor_loss': -2.3714804649353027}
+---------------------------------------
+Time steps: 440000
+---------------------------------------
+Evaluation over 10 episodes: 2679.432 , D4RL score: 82.951
+Train stats: {'critic_loss': 21.187931060791016, 'actor_loss': -2.3671069145202637}
+---------------------------------------
+Time steps: 445000
+---------------------------------------
+Evaluation over 10 episodes: 2712.260 , D4RL score: 83.960
+Train stats: {'critic_loss': 20.348331451416016, 'actor_loss': -2.3776261806488037}
+---------------------------------------
+Time steps: 450000
+---------------------------------------
+Evaluation over 10 episodes: 1843.806 , D4RL score: 57.276
+Train stats: {'critic_loss': 22.38764190673828, 'actor_loss': -2.353012800216675}
+---------------------------------------
+Time steps: 455000
+---------------------------------------
+Evaluation over 10 episodes: 2245.231 , D4RL score: 69.610
+Train stats: {'critic_loss': 31.22418975830078, 'actor_loss': -2.3647642135620117}
+---------------------------------------
+Time steps: 460000
+---------------------------------------
+Evaluation over 10 episodes: 1557.094 , D4RL score: 48.466
+Train stats: {'critic_loss': 20.27783966064453, 'actor_loss': -2.382730722427368}
+---------------------------------------
+Time steps: 465000
+---------------------------------------
+Evaluation over 10 episodes: 3039.502 , D4RL score: 94.015
+Train stats: {'critic_loss': 20.069114685058594, 'actor_loss': -2.3777754306793213}
+---------------------------------------
+Time steps: 470000
+---------------------------------------
+Evaluation over 10 episodes: 2842.780 , D4RL score: 87.970
+Train stats: {'critic_loss': 20.689481735229492, 'actor_loss': -2.3604090213775635}
+---------------------------------------
+Time steps: 475000
+---------------------------------------
+Evaluation over 10 episodes: 2569.283 , D4RL score: 79.567
+Train stats: {'critic_loss': 20.058425903320312, 'actor_loss': -2.3593075275421143}
+---------------------------------------
+Time steps: 480000
+---------------------------------------
+Evaluation over 10 episodes: 2115.688 , D4RL score: 65.630
+Train stats: {'critic_loss': 24.121156692504883, 'actor_loss': -2.3616130352020264}
+---------------------------------------
+Time steps: 485000
+---------------------------------------
+Evaluation over 10 episodes: 1234.305 , D4RL score: 38.548
+Train stats: {'critic_loss': 24.653223037719727, 'actor_loss': -2.3759355545043945}
+---------------------------------------
+Time steps: 490000
+---------------------------------------
+Evaluation over 10 episodes: 2960.596 , D4RL score: 91.590
+Train stats: {'critic_loss': 18.824443817138672, 'actor_loss': -2.3614213466644287}
+---------------------------------------
+Time steps: 495000
+---------------------------------------
+Evaluation over 10 episodes: 1028.046 , D4RL score: 32.211
+Train stats: {'critic_loss': 20.867034912109375, 'actor_loss': -2.3710458278656006}
+---------------------------------------
+Time steps: 500000
+---------------------------------------
+Evaluation over 10 episodes: 2756.160 , D4RL score: 85.309
+Train stats: {'critic_loss': 25.260560989379883, 'actor_loss': -2.366676092147827}
+---------------------------------------
+Time steps: 505000
+---------------------------------------
+Evaluation over 10 episodes: 2157.721 , D4RL score: 66.921
+Train stats: {'critic_loss': 24.807872772216797, 'actor_loss': -2.3643763065338135}
+---------------------------------------
+Time steps: 510000
+---------------------------------------
+Evaluation over 10 episodes: 3142.065 , D4RL score: 97.166
+Train stats: {'critic_loss': 38.10811233520508, 'actor_loss': -2.350576400756836}
+---------------------------------------
+Time steps: 515000
+---------------------------------------
+Evaluation over 10 episodes: 1616.547 , D4RL score: 50.293
+Train stats: {'critic_loss': 24.472070693969727, 'actor_loss': -2.3661911487579346}
+---------------------------------------
+Time steps: 520000
+---------------------------------------
+Evaluation over 10 episodes: 2842.877 , D4RL score: 87.973
+Train stats: {'critic_loss': 25.213314056396484, 'actor_loss': -2.3746583461761475}
+---------------------------------------
+Time steps: 525000
+---------------------------------------
+Evaluation over 10 episodes: 1397.835 , D4RL score: 43.573
+Train stats: {'critic_loss': 27.364864349365234, 'actor_loss': -2.3621184825897217}
+---------------------------------------
+Time steps: 530000
+---------------------------------------
+Evaluation over 10 episodes: 1180.426 , D4RL score: 36.893
+Train stats: {'critic_loss': 21.84881019592285, 'actor_loss': -2.3858048915863037}
+---------------------------------------
+Time steps: 535000
+---------------------------------------
+Evaluation over 10 episodes: 2089.642 , D4RL score: 64.829
+Train stats: {'critic_loss': 28.502132415771484, 'actor_loss': -2.371675968170166}
+---------------------------------------
+Time steps: 540000
+---------------------------------------
+Evaluation over 10 episodes: 1162.810 , D4RL score: 36.351
+Train stats: {'critic_loss': 28.15774154663086, 'actor_loss': -2.3556180000305176}
+---------------------------------------
+Time steps: 545000
+---------------------------------------
+Evaluation over 10 episodes: 1178.474 , D4RL score: 36.833
+Train stats: {'critic_loss': 43.577632904052734, 'actor_loss': -2.3560447692871094}
+---------------------------------------
+Time steps: 550000
+---------------------------------------
+Evaluation over 10 episodes: 2014.609 , D4RL score: 62.524
+Train stats: {'critic_loss': 26.89143180847168, 'actor_loss': -2.374183416366577}
+---------------------------------------
+Time steps: 555000
+---------------------------------------
+Evaluation over 10 episodes: 2591.892 , D4RL score: 80.261
+Train stats: {'critic_loss': 21.918336868286133, 'actor_loss': -2.376647710800171}
+---------------------------------------
+Time steps: 560000
+---------------------------------------
+Evaluation over 10 episodes: 1904.414 , D4RL score: 59.138
+Train stats: {'critic_loss': 32.006629943847656, 'actor_loss': -2.3820481300354004}
+---------------------------------------
+Time steps: 565000
+---------------------------------------
+Evaluation over 10 episodes: 1708.730 , D4RL score: 53.125
+Train stats: {'critic_loss': 25.790512084960938, 'actor_loss': -2.3515634536743164}
+---------------------------------------
+Time steps: 570000
+---------------------------------------
+Evaluation over 10 episodes: 2290.205 , D4RL score: 70.992
+Train stats: {'critic_loss': 20.62102508544922, 'actor_loss': -2.364149570465088}
+---------------------------------------
+Time steps: 575000
+---------------------------------------
+Evaluation over 10 episodes: 3180.922 , D4RL score: 98.360
+Train stats: {'critic_loss': 19.929752349853516, 'actor_loss': -2.3456201553344727}
+---------------------------------------
+Time steps: 580000
+---------------------------------------
+Evaluation over 10 episodes: 1495.074 , D4RL score: 46.561
+Train stats: {'critic_loss': 13.127809524536133, 'actor_loss': -2.3805630207061768}
+---------------------------------------
+Time steps: 585000
+---------------------------------------
+Evaluation over 10 episodes: 1688.232 , D4RL score: 52.496
+Train stats: {'critic_loss': 30.674991607666016, 'actor_loss': -2.3825738430023193}
+---------------------------------------
+Time steps: 590000
+---------------------------------------
+Evaluation over 10 episodes: 1561.044 , D4RL score: 48.588
+Train stats: {'critic_loss': 22.083648681640625, 'actor_loss': -2.3671748638153076}
+---------------------------------------
+Time steps: 595000
+---------------------------------------
+Evaluation over 10 episodes: 2433.598 , D4RL score: 75.398
+Train stats: {'critic_loss': 27.202816009521484, 'actor_loss': -2.354613780975342}
+---------------------------------------
+Time steps: 600000
+---------------------------------------
+Evaluation over 10 episodes: 3107.503 , D4RL score: 96.104
+Train stats: {'critic_loss': 19.05855369567871, 'actor_loss': -2.367654323577881}
+---------------------------------------
+Time steps: 605000
+---------------------------------------
+Evaluation over 10 episodes: 1053.178 , D4RL score: 32.983
+Train stats: {'critic_loss': 21.640548706054688, 'actor_loss': -2.374403238296509}
+---------------------------------------
+Time steps: 610000
+---------------------------------------
+Evaluation over 10 episodes: 1778.443 , D4RL score: 55.267
+Train stats: {'critic_loss': 21.844562530517578, 'actor_loss': -2.377683401107788}
+---------------------------------------
+Time steps: 615000
+---------------------------------------
+Evaluation over 10 episodes: 1734.270 , D4RL score: 53.910
+Train stats: {'critic_loss': 18.41327667236328, 'actor_loss': -2.3584187030792236}
+---------------------------------------
+Time steps: 620000
+---------------------------------------
+Evaluation over 10 episodes: 2554.426 , D4RL score: 79.110
+Train stats: {'critic_loss': 22.36307144165039, 'actor_loss': -2.3649396896362305}
+---------------------------------------
+Time steps: 625000
+---------------------------------------
+Evaluation over 10 episodes: 3114.173 , D4RL score: 96.309
+Train stats: {'critic_loss': 20.914213180541992, 'actor_loss': -2.398252010345459}
+---------------------------------------
+Time steps: 630000
+---------------------------------------
+Evaluation over 10 episodes: 2827.432 , D4RL score: 87.499
+Train stats: {'critic_loss': 32.57267761230469, 'actor_loss': -2.383917808532715}
+---------------------------------------
+Time steps: 635000
+---------------------------------------
+Evaluation over 10 episodes: 2834.331 , D4RL score: 87.711
+Train stats: {'critic_loss': 21.006061553955078, 'actor_loss': -2.3486123085021973}
+---------------------------------------
+Time steps: 640000
+---------------------------------------
+Evaluation over 10 episodes: 1467.577 , D4RL score: 45.716
+Train stats: {'critic_loss': 17.373554229736328, 'actor_loss': -2.3824188709259033}
+---------------------------------------
+Time steps: 645000
+---------------------------------------
+Evaluation over 10 episodes: 2520.144 , D4RL score: 78.057
+Train stats: {'critic_loss': 18.012598037719727, 'actor_loss': -2.359687328338623}
+---------------------------------------
+Time steps: 650000
+---------------------------------------
+Evaluation over 10 episodes: 3162.484 , D4RL score: 97.793
+Train stats: {'critic_loss': 22.938079833984375, 'actor_loss': -2.374394655227661}
+---------------------------------------
+Time steps: 655000
+---------------------------------------
+Evaluation over 10 episodes: 1130.192 , D4RL score: 35.349
+Train stats: {'critic_loss': 20.720706939697266, 'actor_loss': -2.3700380325317383}
+---------------------------------------
+Time steps: 660000
+---------------------------------------
+Evaluation over 10 episodes: 2186.501 , D4RL score: 67.805
+Train stats: {'critic_loss': 20.29547882080078, 'actor_loss': -2.3813979625701904}
+---------------------------------------
+Time steps: 665000
+---------------------------------------
+Evaluation over 10 episodes: 2792.311 , D4RL score: 86.419
+Train stats: {'critic_loss': 30.980283737182617, 'actor_loss': -2.3648078441619873}
+---------------------------------------
+Time steps: 670000
+---------------------------------------
+Evaluation over 10 episodes: 3003.553 , D4RL score: 92.910
+Train stats: {'critic_loss': 21.35685157775879, 'actor_loss': -2.3613665103912354}
+---------------------------------------
+Time steps: 675000
+---------------------------------------
+Evaluation over 10 episodes: 1903.920 , D4RL score: 59.123
+Train stats: {'critic_loss': 29.91664695739746, 'actor_loss': -2.331967830657959}
+---------------------------------------
+Time steps: 680000
+---------------------------------------
+Evaluation over 10 episodes: 1753.311 , D4RL score: 54.495
+Train stats: {'critic_loss': 21.28399085998535, 'actor_loss': -2.3765954971313477}
+---------------------------------------
+Time steps: 685000
+---------------------------------------
+Evaluation over 10 episodes: 1587.385 , D4RL score: 49.397
+Train stats: {'critic_loss': 23.735881805419922, 'actor_loss': -2.363318681716919}
+---------------------------------------
+Time steps: 690000
+---------------------------------------
+Evaluation over 10 episodes: 1759.370 , D4RL score: 54.681
+Train stats: {'critic_loss': 24.785667419433594, 'actor_loss': -2.361347198486328}
+---------------------------------------
+Time steps: 695000
+---------------------------------------
+Evaluation over 10 episodes: 2043.957 , D4RL score: 63.426
+Train stats: {'critic_loss': 20.187850952148438, 'actor_loss': -2.361483573913574}
+---------------------------------------
+Time steps: 700000
+---------------------------------------
+Evaluation over 10 episodes: 1800.531 , D4RL score: 55.946
+Train stats: {'critic_loss': 28.442798614501953, 'actor_loss': -2.3756093978881836}
+---------------------------------------
+Time steps: 705000
+---------------------------------------
+Evaluation over 10 episodes: 1744.815 , D4RL score: 54.234
+Train stats: {'critic_loss': 24.733150482177734, 'actor_loss': -2.364792823791504}
+---------------------------------------
+Time steps: 710000
+---------------------------------------
+Evaluation over 10 episodes: 2928.511 , D4RL score: 90.604
+Train stats: {'critic_loss': 16.70769691467285, 'actor_loss': -2.3775508403778076}
+---------------------------------------
+Time steps: 715000
+---------------------------------------
+Evaluation over 10 episodes: 2055.563 , D4RL score: 63.782
+Train stats: {'critic_loss': 23.557767868041992, 'actor_loss': -2.3630430698394775}
+---------------------------------------
+Time steps: 720000
+---------------------------------------
+Evaluation over 10 episodes: 2454.149 , D4RL score: 76.029
+Train stats: {'critic_loss': 20.684219360351562, 'actor_loss': -2.3801724910736084}
+---------------------------------------
+Time steps: 725000
+---------------------------------------
+Evaluation over 10 episodes: 1654.800 , D4RL score: 51.468
+Train stats: {'critic_loss': 18.184467315673828, 'actor_loss': -2.3531365394592285}
+---------------------------------------
+Time steps: 730000
+---------------------------------------
+Evaluation over 10 episodes: 2513.476 , D4RL score: 77.852
+Train stats: {'critic_loss': 23.346546173095703, 'actor_loss': -2.379106044769287}
+---------------------------------------
+Time steps: 735000
+---------------------------------------
+Evaluation over 10 episodes: 1310.980 , D4RL score: 40.904
+Train stats: {'critic_loss': 28.746482849121094, 'actor_loss': -2.3517565727233887}
+---------------------------------------
+Time steps: 740000
+---------------------------------------
+Evaluation over 10 episodes: 3145.324 , D4RL score: 97.266
+Train stats: {'critic_loss': 18.776622772216797, 'actor_loss': -2.3700695037841797}
+---------------------------------------
+Time steps: 745000
+---------------------------------------
+Evaluation over 10 episodes: 2506.076 , D4RL score: 77.625
+Train stats: {'critic_loss': 20.097036361694336, 'actor_loss': -2.3911306858062744}
+---------------------------------------
+Time steps: 750000
+---------------------------------------
+Evaluation over 10 episodes: 2383.882 , D4RL score: 73.870
+Train stats: {'critic_loss': 19.718929290771484, 'actor_loss': -2.374628782272339}
+---------------------------------------
+Time steps: 755000
+---------------------------------------
+Evaluation over 10 episodes: 1667.016 , D4RL score: 51.844
+Train stats: {'critic_loss': 21.590736389160156, 'actor_loss': -2.3868088722229004}
+---------------------------------------
+Time steps: 760000
+---------------------------------------
+Evaluation over 10 episodes: 3112.209 , D4RL score: 96.249
+Train stats: {'critic_loss': 28.397754669189453, 'actor_loss': -2.372401714324951}
+---------------------------------------
+Time steps: 765000
+---------------------------------------
+Evaluation over 10 episodes: 1903.200 , D4RL score: 59.101
+Train stats: {'critic_loss': 27.62726402282715, 'actor_loss': -2.3703370094299316}
+---------------------------------------
+Time steps: 770000
+---------------------------------------
+Evaluation over 10 episodes: 2081.173 , D4RL score: 64.569
+Train stats: {'critic_loss': 18.743804931640625, 'actor_loss': -2.3508989810943604}
+---------------------------------------
+Time steps: 775000
+---------------------------------------
+Evaluation over 10 episodes: 2958.673 , D4RL score: 91.531
+Train stats: {'critic_loss': 19.331886291503906, 'actor_loss': -2.369589328765869}
+---------------------------------------
+Time steps: 780000
+---------------------------------------
+Evaluation over 10 episodes: 2349.844 , D4RL score: 72.824
+Train stats: {'critic_loss': 16.536569595336914, 'actor_loss': -2.3677420616149902}
+---------------------------------------
+Time steps: 785000
+---------------------------------------
+Evaluation over 10 episodes: 1666.144 , D4RL score: 51.817
+Train stats: {'critic_loss': 19.89764976501465, 'actor_loss': -2.36393404006958}
+---------------------------------------
+Time steps: 790000
+---------------------------------------
+Evaluation over 10 episodes: 2029.484 , D4RL score: 62.981
+Train stats: {'critic_loss': 21.151229858398438, 'actor_loss': -2.363269567489624}
+---------------------------------------
+Time steps: 795000
+---------------------------------------
+Evaluation over 10 episodes: 1181.812 , D4RL score: 36.935
+Train stats: {'critic_loss': 54.87394332885742, 'actor_loss': -2.3642263412475586}
+---------------------------------------
+Time steps: 800000
+---------------------------------------
+Evaluation over 10 episodes: 1167.912 , D4RL score: 36.508
+Train stats: {'critic_loss': 23.143016815185547, 'actor_loss': -2.3584368228912354}
+---------------------------------------
+Time steps: 805000
+---------------------------------------
+Evaluation over 10 episodes: 1661.239 , D4RL score: 51.666
+Train stats: {'critic_loss': 14.872125625610352, 'actor_loss': -2.3797435760498047}
+---------------------------------------
+Time steps: 810000
+---------------------------------------
+Evaluation over 10 episodes: 3008.010 , D4RL score: 93.047
+Train stats: {'critic_loss': 24.088037490844727, 'actor_loss': -2.3446414470672607}
+---------------------------------------
+Time steps: 815000
+---------------------------------------
+Evaluation over 10 episodes: 1821.353 , D4RL score: 56.586
+Train stats: {'critic_loss': 30.933086395263672, 'actor_loss': -2.3705716133117676}
+---------------------------------------
+Time steps: 820000
+---------------------------------------
+Evaluation over 10 episodes: 2149.308 , D4RL score: 66.663
+Train stats: {'critic_loss': 24.618072509765625, 'actor_loss': -2.3659346103668213}
+---------------------------------------
+Time steps: 825000
+---------------------------------------
+Evaluation over 10 episodes: 2884.629 , D4RL score: 89.256
+Train stats: {'critic_loss': 23.060836791992188, 'actor_loss': -2.377066135406494}
+---------------------------------------
+Time steps: 830000
+---------------------------------------
+Evaluation over 10 episodes: 1018.934 , D4RL score: 31.931
+Train stats: {'critic_loss': 23.951580047607422, 'actor_loss': -2.3779215812683105}
+---------------------------------------
+Time steps: 835000
+---------------------------------------
+Evaluation over 10 episodes: 2742.541 , D4RL score: 84.890
+Train stats: {'critic_loss': 28.807395935058594, 'actor_loss': -2.3623404502868652}
+---------------------------------------
+Time steps: 840000
+---------------------------------------
+Evaluation over 10 episodes: 1861.329 , D4RL score: 57.814
+Train stats: {'critic_loss': 17.912256240844727, 'actor_loss': -2.3817954063415527}
+---------------------------------------
+Time steps: 845000
+---------------------------------------
+Evaluation over 10 episodes: 1464.114 , D4RL score: 45.609
+Train stats: {'critic_loss': 19.045127868652344, 'actor_loss': -2.3589062690734863}
+---------------------------------------
+Time steps: 850000
+---------------------------------------
+Evaluation over 10 episodes: 2309.512 , D4RL score: 71.585
+Train stats: {'critic_loss': 26.59600257873535, 'actor_loss': -2.3768506050109863}
+---------------------------------------
+Time steps: 855000
+---------------------------------------
+Evaluation over 10 episodes: 760.167 , D4RL score: 23.980
+Train stats: {'critic_loss': 20.047225952148438, 'actor_loss': -2.3781204223632812}
+---------------------------------------
+Time steps: 860000
+---------------------------------------
+Evaluation over 10 episodes: 2115.838 , D4RL score: 65.634
+Train stats: {'critic_loss': 22.374019622802734, 'actor_loss': -2.3731586933135986}
+---------------------------------------
+Time steps: 865000
+---------------------------------------
+Evaluation over 10 episodes: 1082.285 , D4RL score: 33.877
+Train stats: {'critic_loss': 28.014301300048828, 'actor_loss': -2.338050603866577}
+---------------------------------------
+Time steps: 870000
+---------------------------------------
+Evaluation over 10 episodes: 1468.343 , D4RL score: 45.739
+Train stats: {'critic_loss': 24.612136840820312, 'actor_loss': -2.3695991039276123}
+---------------------------------------
+Time steps: 875000
+---------------------------------------
+Evaluation over 10 episodes: 1239.850 , D4RL score: 38.719
+Train stats: {'critic_loss': 26.527191162109375, 'actor_loss': -2.3685719966888428}
+---------------------------------------
+Time steps: 880000
+---------------------------------------
+Evaluation over 10 episodes: 3025.282 , D4RL score: 93.578
+Train stats: {'critic_loss': 17.374313354492188, 'actor_loss': -2.364191770553589}
+---------------------------------------
+Time steps: 885000
+---------------------------------------
+Evaluation over 10 episodes: 1965.601 , D4RL score: 61.018
+Train stats: {'critic_loss': 17.039487838745117, 'actor_loss': -2.392317056655884}
+---------------------------------------
+Time steps: 890000
+---------------------------------------
+Evaluation over 10 episodes: 2863.681 , D4RL score: 88.612
+Train stats: {'critic_loss': 25.632343292236328, 'actor_loss': -2.361743450164795}
+---------------------------------------
+Time steps: 895000
+---------------------------------------
+Evaluation over 10 episodes: 2998.658 , D4RL score: 92.760
+Train stats: {'critic_loss': 18.638263702392578, 'actor_loss': -2.374185800552368}
+---------------------------------------
+Time steps: 900000
+---------------------------------------
+Evaluation over 10 episodes: 1953.810 , D4RL score: 60.656
+Train stats: {'critic_loss': 21.014251708984375, 'actor_loss': -2.3679189682006836}
+---------------------------------------
+Time steps: 905000
+---------------------------------------
+Evaluation over 10 episodes: 1366.358 , D4RL score: 42.606
+Train stats: {'critic_loss': 26.048763275146484, 'actor_loss': -2.3493778705596924}
+---------------------------------------
+Time steps: 910000
+---------------------------------------
+Evaluation over 10 episodes: 2502.206 , D4RL score: 77.506
+Train stats: {'critic_loss': 28.44237518310547, 'actor_loss': -2.377720594406128}
+---------------------------------------
+Time steps: 915000
+---------------------------------------
+Evaluation over 10 episodes: 1915.337 , D4RL score: 59.474
+Train stats: {'critic_loss': 19.33538055419922, 'actor_loss': -2.3793911933898926}
+---------------------------------------
+Time steps: 920000
+---------------------------------------
+Evaluation over 10 episodes: 1229.934 , D4RL score: 38.414
+Train stats: {'critic_loss': 25.076065063476562, 'actor_loss': -2.370030403137207}
+---------------------------------------
+Time steps: 925000
+---------------------------------------
+Evaluation over 10 episodes: 1358.256 , D4RL score: 42.357
+Train stats: {'critic_loss': 26.656246185302734, 'actor_loss': -2.380690097808838}
+---------------------------------------
+Time steps: 930000
+---------------------------------------
+Evaluation over 10 episodes: 2946.230 , D4RL score: 91.149
+Train stats: {'critic_loss': 19.414945602416992, 'actor_loss': -2.3680038452148438}
+---------------------------------------
+Time steps: 935000
+---------------------------------------
+Evaluation over 10 episodes: 769.584 , D4RL score: 24.269
+Train stats: {'critic_loss': 33.059505462646484, 'actor_loss': -2.3710193634033203}
+---------------------------------------
+Time steps: 940000
+---------------------------------------
+Evaluation over 10 episodes: 1368.325 , D4RL score: 42.666
+Train stats: {'critic_loss': 19.671947479248047, 'actor_loss': -2.364579439163208}
+---------------------------------------
+Time steps: 945000
+---------------------------------------
+Evaluation over 10 episodes: 3043.398 , D4RL score: 94.134
+Train stats: {'critic_loss': 17.47796058654785, 'actor_loss': -2.350332736968994}
+---------------------------------------
+Time steps: 950000
+---------------------------------------
+Evaluation over 10 episodes: 1457.998 , D4RL score: 45.421
+Train stats: {'critic_loss': 22.7961368560791, 'actor_loss': -2.3576433658599854}
+---------------------------------------
+Time steps: 955000
+---------------------------------------
+Evaluation over 10 episodes: 2469.488 , D4RL score: 76.500
+Train stats: {'critic_loss': 19.722505569458008, 'actor_loss': -2.368803024291992}
+---------------------------------------
+Time steps: 960000
+---------------------------------------
+Evaluation over 10 episodes: 1878.276 , D4RL score: 58.335
+Train stats: {'critic_loss': 21.209077835083008, 'actor_loss': -2.3629684448242188}
+---------------------------------------
+Time steps: 965000
+---------------------------------------
+Evaluation over 10 episodes: 3081.202 , D4RL score: 95.296
+Train stats: {'critic_loss': 20.894563674926758, 'actor_loss': -2.367995023727417}
+---------------------------------------
+Time steps: 970000
+---------------------------------------
+Evaluation over 10 episodes: 2172.492 , D4RL score: 67.375
+Train stats: {'critic_loss': 40.50269317626953, 'actor_loss': -2.37992262840271}
+---------------------------------------
+Time steps: 975000
+---------------------------------------
+Evaluation over 10 episodes: 996.287 , D4RL score: 31.235
+Train stats: {'critic_loss': 14.651518821716309, 'actor_loss': -2.3878047466278076}
+---------------------------------------
+Time steps: 980000
+---------------------------------------
+Evaluation over 10 episodes: 2462.066 , D4RL score: 76.272
+Train stats: {'critic_loss': 20.06912612915039, 'actor_loss': -2.382931709289551}
+---------------------------------------
+Time steps: 985000
+---------------------------------------
+Evaluation over 10 episodes: 1313.234 , D4RL score: 40.973
+Train stats: {'critic_loss': 32.59587478637695, 'actor_loss': -2.362250566482544}
+---------------------------------------
+Time steps: 990000
+---------------------------------------
+Evaluation over 10 episodes: 1030.198 , D4RL score: 32.277
+Train stats: {'critic_loss': 26.540620803833008, 'actor_loss': -2.3685736656188965}
+---------------------------------------
+Time steps: 995000
+---------------------------------------
+Evaluation over 10 episodes: 1246.844 , D4RL score: 38.933
+Train stats: {'critic_loss': 29.911113739013672, 'actor_loss': -2.3718197345733643}
+---------------------------------------
+Time steps: 1000000
+---------------------------------------
+Evaluation over 10 episodes: 1390.741 , D4RL score: 43.355
+Train stats: {'critic_loss': 30.12381362915039, 'actor_loss': -2.370286703109741}
+---------------------------------------

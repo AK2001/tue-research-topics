@@ -1,0 +1,21 @@
+Dataset size: 301698
+Dataset size: 301698
+Dataset size: 301698
+
+=== walker2d-medium-replay-v2, beta = 0.5 (whole dataset, 301698 states) ===
+
+A. Negative policy and the shifted target a*
+seed    neg_to_data     shift   outside
+0             0.141     0.261     32.8%
+1             0.199     0.320     39.9%
+2             0.201     0.319     38.8%
+
+B. Final main policies
+seed    beta   to_data  saturated   to_neg
+0       0.00     0.109       5.1%    0.076
+0       0.50     0.155       8.6%    0.192
+1       0.00     0.109       4.8%    0.118
+1       0.50     0.170      14.6%    0.293
+2       0.00     0.109       4.9%    0.122
+2       0.50     0.165      13.8%    0.286
+
