@@ -1,0 +1,213 @@
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+Warning: FrankaKitchen failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'dm_control'
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+Warning: GymBullet failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'pybullet_envs'
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+load datafile:   0%|          | 0/11 [00:00<?, ?it/s]load datafile:  27%|██▋       | 3/11 [00:00<00:00,  8.08it/s]load datafile:  36%|███▋      | 4/11 [00:00<00:01,  6.12it/s]load datafile:  64%|██████▎   | 7/11 [00:01<00:00,  5.40it/s]load datafile:  73%|███████▎  | 8/11 [00:01<00:00,  3.61it/s]load datafile: 100%|██████████| 11/11 [00:01<00:00,  5.97it/s]
+Dataset size: 301698
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+PRE-TRAINING the negative agent, Env: ant-medium-replay-v2, Seed: 0, steps: 500000
+---------------------------------------
+Config:
+  mode: pretrain_neg
+  device: cuda
+  env: ant-medium-replay-v2
+  seed: 0
+  eval_freq: 10000
+  n_episodes: 10
+  max_timesteps: 500000
+  checkpoints_path: None
+  save_final_dir: None
+  load_model: 
+  buffer_size: 2000000
+  batch_size: 256
+  discount: 0.99
+  expl_noise: 0.1
+  tau: 0.005
+  policy_noise: 0.2
+  noise_clip: 0.5
+  policy_freq: 2
+  alpha: 2.5
+  normalize: True
+  normalize_reward: False
+  beta: 0.0
+  neg_dir: models/neg_pretrained
+  neg_eval_episodes: 3
+  neg_select_after: 0.5
+  project: CORL
+  group: TD3_BC-D4RL
+  name: TD3_BC-ant-medium-replay-v2-9ad40ee6
+---------------------------------------
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+Pretrain step 10000: Negative policy normalized score: -8.982
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=6.9237, neg_actor_loss=-0.9717, neg_lambda=0.3810, neg_q_mean=18.5710, neg_to_data=0.4878
+Pretrain step 20000: Negative policy normalized score: 12.146
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=40.8338, neg_actor_loss=-2.3691, neg_lambda=0.0247, neg_q_mean=106.2711, neg_to_data=0.1308
+Pretrain step 30000: Negative policy normalized score: 26.574
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=60.7216, neg_actor_loss=-2.4069, neg_lambda=0.0158, neg_q_mean=158.9682, neg_to_data=0.0923
+Pretrain step 40000: Negative policy normalized score: 14.608
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=45.8265, neg_actor_loss=-2.4128, neg_lambda=0.0173, neg_q_mean=144.4440, neg_to_data=0.0827
+Pretrain step 50000: Negative policy normalized score: 17.879
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=71.5612, neg_actor_loss=-2.3970, neg_lambda=0.0145, neg_q_mean=172.4027, neg_to_data=0.0890
+Pretrain step 60000: Negative policy normalized score: 18.170
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=54.4689, neg_actor_loss=-2.3992, neg_lambda=0.0148, neg_q_mean=167.4192, neg_to_data=0.0738
+Pretrain step 70000: Negative policy normalized score: 5.046
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=55.0667, neg_actor_loss=-2.3793, neg_lambda=0.0166, neg_q_mean=149.5583, neg_to_data=0.0892
+Pretrain step 80000: Negative policy normalized score: 13.331
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=144.3687, neg_actor_loss=-2.3681, neg_lambda=0.0111, neg_q_mean=227.2365, neg_to_data=0.1045
+Pretrain step 90000: Negative policy normalized score: 17.750
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=535.8504, neg_actor_loss=-2.3575, neg_lambda=0.0060, neg_q_mean=427.9811, neg_to_data=0.1149
+Pretrain step 100000: Negative policy normalized score: 25.727
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=752.9013, neg_actor_loss=-2.3830, neg_lambda=0.0040, neg_q_mean=613.4416, neg_to_data=0.0810
+Pretrain step 110000: Negative policy normalized score: 24.831
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=455.2869, neg_actor_loss=-2.3797, neg_lambda=0.0042, neg_q_mean=578.0181, neg_to_data=0.0632
+Pretrain step 120000: Negative policy normalized score: 17.221
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=272.1412, neg_actor_loss=-2.3549, neg_lambda=0.0052, neg_q_mean=464.2016, neg_to_data=0.0615
+Pretrain step 130000: Negative policy normalized score: 14.882
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=186.3761, neg_actor_loss=-2.3291, neg_lambda=0.0065, neg_q_mean=367.0183, neg_to_data=0.0649
+Pretrain step 140000: Negative policy normalized score: 19.338
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=234.4201, neg_actor_loss=-2.3226, neg_lambda=0.0068, neg_q_mean=353.1358, neg_to_data=0.0738
+Pretrain step 150000: Negative policy normalized score: 20.161
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=224.4102, neg_actor_loss=-2.3230, neg_lambda=0.0066, neg_q_mean=361.6120, neg_to_data=0.0734
+Pretrain step 160000: Negative policy normalized score: 24.625
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=124.4310, neg_actor_loss=-2.3227, neg_lambda=0.0073, neg_q_mean=326.7492, neg_to_data=0.0618
+Pretrain step 170000: Negative policy normalized score: 25.113
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=69.8260, neg_actor_loss=-2.3025, neg_lambda=0.0093, neg_q_mean=255.7121, neg_to_data=0.0618
+Pretrain step 180000: Negative policy normalized score: 24.341
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=44.2172, neg_actor_loss=-2.3142, neg_lambda=0.0121, neg_q_mean=197.8988, neg_to_data=0.0634
+Pretrain step 190000: Negative policy normalized score: 22.619
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=31.1043, neg_actor_loss=-2.3608, neg_lambda=0.0161, neg_q_mean=151.9652, neg_to_data=0.0678
+Pretrain step 200000: Negative policy normalized score: 22.056
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=24.6344, neg_actor_loss=-2.3768, neg_lambda=0.0211, neg_q_mean=116.7263, neg_to_data=0.0707
+Pretrain step 210000: Negative policy normalized score: 18.119
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=22.3363, neg_actor_loss=-2.3966, neg_lambda=0.0288, neg_q_mean=86.6528, neg_to_data=0.0806
+Pretrain step 220000: Negative policy normalized score: 21.945
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=50.7462, neg_actor_loss=-2.3755, neg_lambda=0.0277, neg_q_mean=98.1437, neg_to_data=0.1243
+Pretrain step 230000: Negative policy normalized score: 4.055
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=36.0318, neg_actor_loss=-2.4235, neg_lambda=0.0190, neg_q_mean=131.7759, neg_to_data=0.0764
+Pretrain step 240000: Negative policy normalized score: 5.628
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=66.2485, neg_actor_loss=-2.3836, neg_lambda=0.0177, neg_q_mean=146.5016, neg_to_data=0.1161
+Pretrain step 250000: Negative policy normalized score: 12.181
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=173.2002, neg_actor_loss=-2.4058, neg_lambda=0.0093, neg_q_mean=270.4671, neg_to_data=0.0905
+  -> new most dangerous snapshot (score 12.181)
+Pretrain step 260000: Negative policy normalized score: 1.968
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=222.2490, neg_actor_loss=-2.3977, neg_lambda=0.0080, neg_q_mean=316.5477, neg_to_data=0.0925
+  -> new most dangerous snapshot (score 1.968)
+Pretrain step 270000: Negative policy normalized score: 19.771
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=1088.8767, neg_actor_loss=-2.3787, neg_lambda=0.0042, neg_q_mean=621.7609, neg_to_data=0.1097
+Pretrain step 280000: Negative policy normalized score: 7.018
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=2199.7614, neg_actor_loss=-2.3887, neg_lambda=0.0025, neg_q_mean=993.0004, neg_to_data=0.0935
+Pretrain step 290000: Negative policy normalized score: 13.468
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=4298.2834, neg_actor_loss=-2.3927, neg_lambda=0.0017, neg_q_mean=1491.4589, neg_to_data=0.0814
+Pretrain step 300000: Negative policy normalized score: 15.121
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=5307.9825, neg_actor_loss=-2.3893, neg_lambda=0.0014, neg_q_mean=1760.9841, neg_to_data=0.0750
+Pretrain step 310000: Negative policy normalized score: 26.861
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=7197.1444, neg_actor_loss=-2.3821, neg_lambda=0.0012, neg_q_mean=2112.6334, neg_to_data=0.0765
+Pretrain step 320000: Negative policy normalized score: 26.040
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=5659.5830, neg_actor_loss=-2.3886, neg_lambda=0.0011, neg_q_mean=2262.6874, neg_to_data=0.0616
+Pretrain step 330000: Negative policy normalized score: 23.021
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=3040.3066, neg_actor_loss=-2.3763, neg_lambda=0.0013, neg_q_mean=1901.7156, neg_to_data=0.0539
+Pretrain step 340000: Negative policy normalized score: 24.985
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=2482.8347, neg_actor_loss=-2.3488, neg_lambda=0.0015, neg_q_mean=1596.9485, neg_to_data=0.0607
+Pretrain step 350000: Negative policy normalized score: 27.980
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=2281.3288, neg_actor_loss=-2.3391, neg_lambda=0.0016, neg_q_mean=1480.1835, neg_to_data=0.0589
+Pretrain step 360000: Negative policy normalized score: 29.160
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=1174.7501, neg_actor_loss=-2.3222, neg_lambda=0.0020, neg_q_mean=1223.2403, neg_to_data=0.0535
+Pretrain step 370000: Negative policy normalized score: 24.047
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=596.1794, neg_actor_loss=-2.2950, neg_lambda=0.0025, neg_q_mean=931.8953, neg_to_data=0.0516
+Pretrain step 380000: Negative policy normalized score: 26.645
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=353.0675, neg_actor_loss=-2.2631, neg_lambda=0.0034, neg_q_mean=688.8974, neg_to_data=0.0523
+Pretrain step 390000: Negative policy normalized score: 24.847
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=218.2020, neg_actor_loss=-2.2304, neg_lambda=0.0046, neg_q_mean=502.5743, neg_to_data=0.0533
+Pretrain step 400000: Negative policy normalized score: 17.356
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=143.2590, neg_actor_loss=-2.1942, neg_lambda=0.0063, neg_q_mean=361.2376, neg_to_data=0.0561
+Pretrain step 410000: Negative policy normalized score: 24.205
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=241.2988, neg_actor_loss=-2.1947, neg_lambda=0.0066, neg_q_mean=345.4081, neg_to_data=0.0794
+Pretrain step 420000: Negative policy normalized score: 23.994
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=165.8928, neg_actor_loss=-2.2228, neg_lambda=0.0068, neg_q_mean=338.3255, neg_to_data=0.0677
+Pretrain step 430000: Negative policy normalized score: 25.581
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=150.4680, neg_actor_loss=-2.2277, neg_lambda=0.0076, neg_q_mean=303.5044, neg_to_data=0.0662
+Pretrain step 440000: Negative policy normalized score: 20.932
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=114.2639, neg_actor_loss=-2.2278, neg_lambda=0.0089, neg_q_mean=257.3572, neg_to_data=0.0665
+Pretrain step 450000: Negative policy normalized score: 18.603
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=110.8896, neg_actor_loss=-2.2542, neg_lambda=0.0102, neg_q_mean=228.8006, neg_to_data=0.0745
+Pretrain step 460000: Negative policy normalized score: 17.137
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=87.3757, neg_actor_loss=-2.3123, neg_lambda=0.0117, neg_q_mean=204.9573, neg_to_data=0.0715
+Pretrain step 470000: Negative policy normalized score: 17.924
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=62.4236, neg_actor_loss=-2.3456, neg_lambda=0.0148, neg_q_mean=164.6188, neg_to_data=0.0748
+Pretrain step 480000: Negative policy normalized score: 22.533
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=59.0095, neg_actor_loss=-2.3955, neg_lambda=0.0177, neg_q_mean=140.6870, neg_to_data=0.0966
+Pretrain step 490000: Negative policy normalized score: 23.739
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=59.6000, neg_actor_loss=-2.4054, neg_lambda=0.0189, neg_q_mean=132.9995, neg_to_data=0.0945
+Pretrain step 500000: Negative policy normalized score: 18.275
+Episode lengths: 1000, 1000, 1000
+Train stats: danger_critic_loss=157.9052, neg_actor_loss=-2.3708, neg_lambda=0.0180, neg_q_mean=143.8415, neg_to_data=0.1290
+---------------------------------------
+Saved negative agent: models/neg_pretrained/ant-medium-replay-v2__seed0__neg.pt
+  snapshot from step 260000, negative policy score 1.968
+---------------------------------------

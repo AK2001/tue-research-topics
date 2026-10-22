@@ -2,3 +2,6 @@
 .idea/
 d3rlpy_logs/
 __pycache__/
+models/
+logs/slurm/
+results_per_run.csv

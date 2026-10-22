@@ -1,0 +1,33 @@
+Dataset size: 401598
+Dataset size: 401598
+Dataset size: 401598
+Dataset size: 401598
+Dataset size: 401598
+Dataset size: 401598
+
+=== hopper-medium-replay-v2, beta = 0.5 (whole dataset, 401598 states) ===
+
+A. Negative policy and the shifted target a*
+seed    neg_to_data     shift   outside
+0             0.161     0.297     39.6%
+1             0.164     0.298     38.9%
+2             0.173     0.305     39.2%
+3             0.208     0.341     40.9%
+4             0.174     0.313     41.2%
+5             0.235     0.370     44.1%
+
+B. Final main policies
+seed    beta   to_data  saturated   to_neg
+0       0.00     0.125       3.7%    0.065
+0       0.50     0.172       8.3%    0.184
+1       0.00     0.126       3.6%    0.063
+1       0.50     0.172       8.7%    0.185
+2       0.00     0.127       3.5%    0.080
+2       0.50     0.175       9.5%    0.202
+3       0.00     0.127       4.3%    0.110
+3       0.50     0.192      10.6%    0.301
+4       0.00     0.125       3.4%    0.076
+4       0.50     0.171       9.6%    0.204
+5       0.00     0.128       3.7%    0.135
+5       0.50     0.195      15.1%    0.351
+

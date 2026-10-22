@@ -1,0 +1,1458 @@
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+Warning: FrankaKitchen failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'dm_control'
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+Warning: GymBullet failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'pybullet_envs'
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+load datafile:   0%|          | 0/21 [00:00<?, ?it/s]load datafile:   5%|▍         | 1/21 [00:00<00:02,  9.63it/s]load datafile:  14%|█▍        | 3/21 [00:00<00:02,  6.40it/s]load datafile:  19%|█▉        | 4/21 [00:00<00:03,  4.79it/s]load datafile:  81%|████████  | 17/21 [00:01<00:00, 19.03it/s]load datafile:  90%|█████████ | 19/21 [00:01<00:00, 13.27it/s]load datafile: 100%|██████████| 21/21 [00:01<00:00, 13.75it/s]
+Dataset size: 999998
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+Training TD3 + BC (v2), Env: hopper-medium-v2, Seed: 0, beta: 0.0, alpha: 2.5
+---------------------------------------
+Config:
+  mode: train
+  device: cuda
+  env: hopper-medium-v2
+  seed: 0
+  eval_freq: 5000
+  n_episodes: 10
+  max_timesteps: 1000000
+  checkpoints_path: None
+  save_final_dir: models/final_hopper-medium-v2
+  load_model: 
+  buffer_size: 2000000
+  batch_size: 256
+  discount: 0.99
+  expl_noise: 0.1
+  tau: 0.005
+  policy_noise: 0.2
+  noise_clip: 0.5
+  policy_freq: 2
+  alpha: 2.5
+  normalize: True
+  normalize_reward: False
+  beta: 0.0
+  neg_dir: models/neg_pretrained
+  neg_eval_episodes: 3
+  neg_select_after: 0.5
+  project: CORL
+  group: TD3_BC-D4RL
+  name: TD3_BC-hopper-medium-v2-be731d96
+---------------------------------------
+Time steps: 5000
+/gpfs/home4/scur0306/miniforge3/envs/td3bc/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+---------------------------------------
+Evaluation over 10 episodes: 1646.514 , D4RL score: 51.214
+Train stats: actor_loss=-2.3824, bc_mse=0.1176, critic_loss=0.4860, q_mean=18.9866
+Episode scores: 48.69, 48.53, 56.42, 48.49, 52.90, 55.45, 57.62, 47.96, 48.10, 47.97
+Episode lengths: 503, 500, 572, 501, 534, 554, 581, 497, 496, 496
+---------------------------------------
+Time steps: 10000
+---------------------------------------
+Evaluation over 10 episodes: 1548.395 , D4RL score: 48.199
+Train stats: actor_loss=-2.4255, bc_mse=0.0745, critic_loss=0.6360, q_mean=51.1601
+Episode scores: 45.90, 48.79, 45.96, 45.43, 47.80, 39.57, 46.69, 57.11, 58.25, 46.49
+Episode lengths: 459, 495, 460, 456, 481, 410, 466, 570, 588, 465
+---------------------------------------
+Time steps: 15000
+---------------------------------------
+Evaluation over 10 episodes: 1805.755 , D4RL score: 56.107
+Train stats: actor_loss=-2.4315, bc_mse=0.0685, critic_loss=1.1861, q_mean=79.5411
+Episode scores: 65.58, 66.48, 63.36, 46.62, 53.03, 47.90, 68.18, 59.31, 45.30, 45.31
+Episode lengths: 652, 666, 626, 466, 527, 477, 678, 593, 455, 455
+---------------------------------------
+Time steps: 20000
+---------------------------------------
+Evaluation over 10 episodes: 1441.823 , D4RL score: 44.924
+Train stats: actor_loss=-2.4343, bc_mse=0.0657, critic_loss=1.7139, q_mean=104.0475
+Episode scores: 42.99, 49.66, 39.11, 47.44, 47.81, 38.47, 43.66, 45.38, 46.09, 48.64
+Episode lengths: 438, 502, 412, 481, 486, 406, 445, 459, 465, 504
+---------------------------------------
+Time steps: 25000
+---------------------------------------
+Evaluation over 10 episodes: 1529.249 , D4RL score: 47.611
+Train stats: actor_loss=-2.4358, bc_mse=0.0642, critic_loss=1.9937, q_mean=125.2516
+Episode scores: 39.22, 72.66, 43.66, 50.44, 49.07, 39.03, 49.28, 38.94, 44.99, 48.81
+Episode lengths: 407, 713, 440, 502, 486, 407, 491, 405, 449, 484
+---------------------------------------
+Time steps: 30000
+---------------------------------------
+Evaluation over 10 episodes: 1663.995 , D4RL score: 51.751
+Train stats: actor_loss=-2.4370, bc_mse=0.0630, critic_loss=2.3019, q_mean=143.5584
+Episode scores: 49.74, 50.12, 57.15, 66.47, 46.50, 56.02, 40.78, 54.27, 43.62, 52.83
+Episode lengths: 499, 501, 566, 665, 466, 551, 420, 539, 441, 528
+---------------------------------------
+Time steps: 35000
+---------------------------------------
+Evaluation over 10 episodes: 1622.010 , D4RL score: 50.461
+Train stats: actor_loss=-2.4381, bc_mse=0.0618, critic_loss=2.4859, q_mean=159.2327
+Episode scores: 52.34, 57.28, 46.67, 45.10, 39.93, 73.14, 56.95, 50.66, 39.27, 43.26
+Episode lengths: 525, 572, 466, 450, 411, 714, 575, 507, 409, 435
+---------------------------------------
+Time steps: 40000
+---------------------------------------
+Evaluation over 10 episodes: 1780.996 , D4RL score: 55.346
+Train stats: actor_loss=-2.4387, bc_mse=0.0613, critic_loss=2.6806, q_mean=172.5208
+Episode scores: 65.84, 53.57, 56.71, 54.70, 47.73, 47.54, 45.38, 48.65, 74.21, 59.11
+Episode lengths: 660, 531, 560, 539, 472, 478, 454, 494, 738, 592
+---------------------------------------
+Time steps: 45000
+---------------------------------------
+Evaluation over 10 episodes: 1295.857 , D4RL score: 40.439
+Train stats: actor_loss=-2.4395, bc_mse=0.0605, critic_loss=2.7940, q_mean=183.7987
+Episode scores: 39.21, 39.54, 42.68, 46.56, 38.92, 38.69, 40.15, 39.46, 40.12, 39.06
+Episode lengths: 406, 406, 431, 464, 404, 402, 412, 406, 411, 404
+---------------------------------------
+Time steps: 50000
+---------------------------------------
+Evaluation over 10 episodes: 1761.569 , D4RL score: 54.749
+Train stats: actor_loss=-2.4403, bc_mse=0.0597, critic_loss=2.8941, q_mean=193.2398
+Episode scores: 71.89, 55.87, 48.75, 63.62, 50.09, 39.46, 48.65, 49.10, 64.69, 55.37
+Episode lengths: 709, 552, 502, 631, 514, 412, 502, 505, 638, 553
+---------------------------------------
+Time steps: 55000
+---------------------------------------
+Evaluation over 10 episodes: 1581.070 , D4RL score: 49.203
+Train stats: actor_loss=-2.4407, bc_mse=0.0593, critic_loss=2.9977, q_mean=200.7543
+Episode scores: 53.36, 54.88, 49.28, 40.50, 46.57, 52.02, 51.51, 48.17, 47.57, 48.18
+Episode lengths: 540, 544, 506, 417, 462, 518, 517, 485, 472, 480
+---------------------------------------
+Time steps: 60000
+---------------------------------------
+Evaluation over 10 episodes: 1337.983 , D4RL score: 41.734
+Train stats: actor_loss=-2.4408, bc_mse=0.0592, critic_loss=3.1743, q_mean=206.8280
+Episode scores: 50.96, 38.63, 39.01, 38.97, 38.81, 39.50, 38.95, 54.14, 39.02, 39.35
+Episode lengths: 514, 406, 406, 407, 406, 410, 407, 541, 407, 410
+---------------------------------------
+Time steps: 65000
+---------------------------------------
+Evaluation over 10 episodes: 1591.052 , D4RL score: 49.510
+Train stats: actor_loss=-2.4413, bc_mse=0.0587, critic_loss=3.4777, q_mean=212.0849
+Episode scores: 45.86, 45.85, 48.52, 50.09, 48.50, 53.23, 49.33, 48.89, 49.03, 55.80
+Episode lengths: 456, 458, 483, 517, 488, 525, 503, 489, 492, 580
+---------------------------------------
+Time steps: 70000
+---------------------------------------
+Evaluation over 10 episodes: 1463.647 , D4RL score: 45.595
+Train stats: actor_loss=-2.4414, bc_mse=0.0586, critic_loss=3.7867, q_mean=216.3141
+Episode scores: 15.21, 33.26, 56.99, 30.92, 32.32, 53.59, 33.22, 72.09, 95.34, 33.02
+Episode lengths: 185, 345, 587, 321, 332, 548, 352, 723, 923, 341
+---------------------------------------
+Time steps: 75000
+---------------------------------------
+Evaluation over 10 episodes: 1551.924 , D4RL score: 48.307
+Train stats: actor_loss=-2.4419, bc_mse=0.0581, critic_loss=4.0438, q_mean=219.7343
+Episode scores: 42.66, 39.90, 40.43, 46.22, 49.64, 39.45, 84.14, 45.87, 49.10, 45.65
+Episode lengths: 429, 409, 414, 459, 493, 407, 821, 453, 488, 454
+---------------------------------------
+Time steps: 80000
+---------------------------------------
+Evaluation over 10 episodes: 1331.723 , D4RL score: 41.541
+Train stats: actor_loss=-2.4419, bc_mse=0.0581, critic_loss=4.2933, q_mean=222.5415
+Episode scores: 39.01, 39.55, 39.69, 47.72, 39.48, 39.73, 39.74, 39.10, 42.16, 49.25
+Episode lengths: 405, 409, 409, 472, 408, 410, 410, 406, 426, 492
+---------------------------------------
+Time steps: 85000
+---------------------------------------
+Evaluation over 10 episodes: 1844.544 , D4RL score: 57.298
+Train stats: actor_loss=-2.4421, bc_mse=0.0579, critic_loss=4.5250, q_mean=224.8895
+Episode scores: 85.55, 56.96, 55.23, 57.61, 46.50, 57.70, 57.91, 58.96, 47.77, 48.79
+Episode lengths: 830, 559, 543, 580, 469, 574, 578, 585, 477, 495
+---------------------------------------
+Time steps: 90000
+---------------------------------------
+Evaluation over 10 episodes: 1457.185 , D4RL score: 45.396
+Train stats: actor_loss=-2.4422, bc_mse=0.0578, critic_loss=4.5907, q_mean=227.1510
+Episode scores: 48.00, 44.39, 50.73, 45.87, 46.04, 43.57, 40.30, 39.95, 55.89, 39.22
+Episode lengths: 473, 441, 508, 456, 455, 437, 413, 412, 555, 406
+---------------------------------------
+Time steps: 95000
+---------------------------------------
+Evaluation over 10 episodes: 1411.527 , D4RL score: 43.993
+Train stats: actor_loss=-2.4424, bc_mse=0.0576, critic_loss=4.5782, q_mean=228.8122
+Episode scores: 45.36, 39.47, 43.16, 48.06, 40.41, 43.96, 50.91, 45.16, 42.04, 41.41
+Episode lengths: 454, 409, 437, 475, 415, 444, 508, 452, 428, 421
+---------------------------------------
+Time steps: 100000
+---------------------------------------
+Evaluation over 10 episodes: 1518.082 , D4RL score: 47.267
+Train stats: actor_loss=-2.4427, bc_mse=0.0573, critic_loss=4.5818, q_mean=230.3735
+Episode scores: 58.78, 40.77, 49.86, 40.74, 40.06, 49.14, 46.43, 57.60, 49.11, 40.19
+Episode lengths: 587, 417, 505, 416, 411, 504, 460, 569, 489, 412
+---------------------------------------
+Time steps: 105000
+---------------------------------------
+Evaluation over 10 episodes: 1809.029 , D4RL score: 56.207
+Train stats: actor_loss=-2.4429, bc_mse=0.0571, critic_loss=4.5549, q_mean=231.5714
+Episode scores: 66.45, 53.64, 52.81, 57.04, 58.41, 39.41, 49.97, 53.34, 49.21, 81.80
+Episode lengths: 655, 530, 527, 565, 581, 410, 507, 527, 498, 801
+---------------------------------------
+Time steps: 110000
+---------------------------------------
+Evaluation over 10 episodes: 1734.901 , D4RL score: 53.929
+Train stats: actor_loss=-2.4431, bc_mse=0.0569, critic_loss=4.5096, q_mean=232.3120
+Episode scores: 39.37, 51.63, 59.09, 50.54, 57.59, 56.72, 49.87, 64.44, 53.52, 56.54
+Episode lengths: 412, 524, 596, 516, 571, 559, 510, 633, 540, 565
+---------------------------------------
+Time steps: 115000
+---------------------------------------
+Evaluation over 10 episodes: 1300.288 , D4RL score: 40.576
+Train stats: actor_loss=-2.4431, bc_mse=0.0569, critic_loss=4.5500, q_mean=232.8105
+Episode scores: 42.64, 39.98, 39.68, 40.73, 39.69, 44.31, 39.81, 39.87, 39.55, 39.48
+Episode lengths: 431, 413, 410, 418, 410, 446, 412, 411, 411, 409
+---------------------------------------
+Time steps: 120000
+---------------------------------------
+Evaluation over 10 episodes: 1525.407 , D4RL score: 47.493
+Train stats: actor_loss=-2.4434, bc_mse=0.0566, critic_loss=4.5057, q_mean=233.2250
+Episode scores: 45.59, 48.88, 56.78, 39.85, 50.01, 39.76, 64.23, 40.71, 41.83, 47.28
+Episode lengths: 458, 489, 560, 411, 500, 414, 628, 421, 426, 469
+---------------------------------------
+Time steps: 125000
+---------------------------------------
+Evaluation over 10 episodes: 1543.200 , D4RL score: 48.039
+Train stats: actor_loss=-2.4434, bc_mse=0.0566, critic_loss=4.4478, q_mean=233.2995
+Episode scores: 49.57, 40.17, 39.68, 48.43, 49.69, 48.54, 39.85, 75.57, 39.80, 49.08
+Episode lengths: 494, 411, 409, 481, 495, 487, 410, 745, 409, 488
+---------------------------------------
+Time steps: 130000
+---------------------------------------
+Evaluation over 10 episodes: 1465.951 , D4RL score: 45.666
+Train stats: actor_loss=-2.4436, bc_mse=0.0564, critic_loss=4.4896, q_mean=233.5976
+Episode scores: 43.62, 48.87, 39.62, 42.13, 39.47, 40.72, 46.33, 41.60, 63.62, 50.66
+Episode lengths: 438, 493, 411, 428, 411, 419, 462, 424, 623, 512
+---------------------------------------
+Time steps: 135000
+---------------------------------------
+Evaluation over 10 episodes: 1406.851 , D4RL score: 43.850
+Train stats: actor_loss=-2.4436, bc_mse=0.0564, critic_loss=4.5152, q_mean=233.6087
+Episode scores: 48.30, 40.06, 40.19, 47.01, 39.69, 44.95, 48.26, 40.17, 42.86, 47.01
+Episode lengths: 479, 412, 413, 466, 409, 451, 478, 412, 431, 466
+---------------------------------------
+Time steps: 140000
+---------------------------------------
+Evaluation over 10 episodes: 1714.293 , D4RL score: 53.296
+Train stats: actor_loss=-2.4436, bc_mse=0.0564, critic_loss=4.4901, q_mean=233.6467
+Episode scores: 58.55, 57.99, 46.60, 57.94, 55.91, 43.58, 46.38, 58.19, 55.60, 52.22
+Episode lengths: 581, 578, 465, 581, 550, 439, 463, 578, 550, 527
+---------------------------------------
+Time steps: 145000
+---------------------------------------
+Evaluation over 10 episodes: 1698.063 , D4RL score: 52.798
+Train stats: actor_loss=-2.4438, bc_mse=0.0562, critic_loss=4.5201, q_mean=233.3325
+Episode scores: 45.84, 49.07, 57.96, 52.17, 52.18, 50.74, 48.59, 47.06, 58.97, 65.40
+Episode lengths: 459, 490, 575, 523, 523, 516, 487, 468, 588, 647
+---------------------------------------
+Time steps: 150000
+---------------------------------------
+Evaluation over 10 episodes: 1960.972 , D4RL score: 60.876
+Train stats: actor_loss=-2.4441, bc_mse=0.0559, critic_loss=4.4988, q_mean=233.4559
+Episode scores: 57.98, 48.50, 72.04, 51.49, 58.88, 48.53, 74.54, 68.47, 52.57, 75.76
+Episode lengths: 579, 485, 702, 516, 589, 488, 741, 684, 526, 752
+---------------------------------------
+Time steps: 155000
+---------------------------------------
+Evaluation over 10 episodes: 1934.304 , D4RL score: 60.056
+Train stats: actor_loss=-2.4442, bc_mse=0.0557, critic_loss=4.5116, q_mean=233.1564
+Episode scores: 54.08, 59.75, 53.42, 72.98, 62.14, 51.35, 82.09, 54.50, 57.48, 52.78
+Episode lengths: 546, 602, 542, 725, 626, 528, 812, 551, 586, 534
+---------------------------------------
+Time steps: 160000
+---------------------------------------
+Evaluation over 10 episodes: 1307.344 , D4RL score: 40.792
+Train stats: actor_loss=-2.4440, bc_mse=0.0560, critic_loss=4.5232, q_mean=233.1068
+Episode scores: 39.98, 40.03, 39.36, 40.52, 49.08, 40.48, 39.88, 39.83, 39.37, 39.40
+Episode lengths: 413, 413, 408, 417, 490, 416, 411, 411, 408, 408
+---------------------------------------
+Time steps: 165000
+---------------------------------------
+Evaluation over 10 episodes: 1810.928 , D4RL score: 56.265
+Train stats: actor_loss=-2.4442, bc_mse=0.0557, critic_loss=4.5167, q_mean=233.1299
+Episode scores: 54.59, 57.54, 51.12, 42.23, 55.58, 49.10, 92.74, 44.56, 49.95, 65.26
+Episode lengths: 538, 583, 515, 435, 570, 494, 911, 447, 505, 666
+---------------------------------------
+Time steps: 170000
+---------------------------------------
+Evaluation over 10 episodes: 1763.518 , D4RL score: 54.809
+Train stats: actor_loss=-2.4445, bc_mse=0.0555, critic_loss=4.4771, q_mean=233.1259
+Episode scores: 50.27, 51.65, 51.99, 45.53, 66.17, 58.53, 42.55, 57.13, 73.86, 50.39
+Episode lengths: 510, 510, 517, 450, 649, 583, 428, 578, 716, 506
+---------------------------------------
+Time steps: 175000
+---------------------------------------
+Evaluation over 10 episodes: 1659.359 , D4RL score: 51.608
+Train stats: actor_loss=-2.4445, bc_mse=0.0555, critic_loss=4.4823, q_mean=232.9183
+Episode scores: 54.16, 51.32, 48.78, 57.52, 54.03, 49.31, 49.07, 49.78, 51.61, 50.50
+Episode lengths: 543, 518, 503, 582, 533, 507, 505, 510, 521, 512
+---------------------------------------
+Time steps: 180000
+---------------------------------------
+Evaluation over 10 episodes: 2076.390 , D4RL score: 64.422
+Train stats: actor_loss=-2.4446, bc_mse=0.0554, critic_loss=4.3500, q_mean=232.8301
+Episode scores: 58.46, 58.63, 55.66, 55.76, 90.77, 85.12, 57.98, 64.10, 50.95, 66.79
+Episode lengths: 579, 580, 550, 549, 877, 835, 573, 628, 512, 656
+---------------------------------------
+Time steps: 185000
+---------------------------------------
+Evaluation over 10 episodes: 1892.574 , D4RL score: 58.774
+Train stats: actor_loss=-2.4443, bc_mse=0.0557, critic_loss=4.3759, q_mean=232.8285
+Episode scores: 58.03, 63.48, 55.79, 51.48, 78.58, 61.36, 49.57, 67.88, 53.33, 48.24
+Episode lengths: 588, 623, 559, 516, 774, 609, 507, 676, 533, 483
+---------------------------------------
+Time steps: 190000
+---------------------------------------
+Evaluation over 10 episodes: 1571.294 , D4RL score: 48.902
+Train stats: actor_loss=-2.4443, bc_mse=0.0557, critic_loss=4.3391, q_mean=232.6536
+Episode scores: 48.61, 48.75, 46.62, 75.23, 39.82, 44.44, 43.35, 47.50, 44.71, 50.00
+Episode lengths: 485, 491, 466, 744, 411, 446, 437, 471, 450, 504
+---------------------------------------
+Time steps: 195000
+---------------------------------------
+Evaluation over 10 episodes: 1980.257 , D4RL score: 61.468
+Train stats: actor_loss=-2.4446, bc_mse=0.0554, critic_loss=4.2818, q_mean=232.6326
+Episode scores: 72.45, 69.98, 54.57, 66.01, 54.53, 60.48, 46.13, 59.87, 64.21, 66.44
+Episode lengths: 713, 691, 544, 658, 542, 610, 461, 602, 633, 662
+---------------------------------------
+Time steps: 200000
+---------------------------------------
+Evaluation over 10 episodes: 2000.298 , D4RL score: 62.084
+Train stats: actor_loss=-2.4447, bc_mse=0.0553, critic_loss=4.2592, q_mean=232.8362
+Episode scores: 55.35, 65.95, 65.24, 65.34, 62.83, 58.12, 56.33, 50.01, 92.83, 48.84
+Episode lengths: 548, 649, 644, 640, 621, 588, 559, 509, 910, 500
+---------------------------------------
+Time steps: 205000
+---------------------------------------
+Evaluation over 10 episodes: 1834.315 , D4RL score: 56.984
+Train stats: actor_loss=-2.4449, bc_mse=0.0551, critic_loss=4.2317, q_mean=232.6346
+Episode scores: 58.03, 67.21, 50.30, 56.04, 45.69, 63.09, 49.21, 52.17, 68.68, 59.42
+Episode lengths: 578, 662, 512, 548, 454, 620, 504, 525, 678, 585
+---------------------------------------
+Time steps: 210000
+---------------------------------------
+Evaluation over 10 episodes: 1689.935 , D4RL score: 52.548
+Train stats: actor_loss=-2.4449, bc_mse=0.0551, critic_loss=4.1847, q_mean=232.5851
+Episode scores: 46.17, 54.13, 39.93, 54.79, 70.94, 41.65, 40.34, 57.95, 58.00, 61.58
+Episode lengths: 455, 533, 410, 540, 695, 421, 414, 567, 572, 608
+---------------------------------------
+Time steps: 215000
+---------------------------------------
+Evaluation over 10 episodes: 1873.764 , D4RL score: 58.196
+Train stats: actor_loss=-2.4450, bc_mse=0.0550, critic_loss=4.1344, q_mean=232.7081
+Episode scores: 58.56, 50.32, 64.65, 54.64, 48.88, 66.78, 48.83, 58.95, 81.09, 49.26
+Episode lengths: 594, 506, 639, 546, 501, 665, 502, 590, 793, 503
+---------------------------------------
+Time steps: 220000
+---------------------------------------
+Evaluation over 10 episodes: 1991.163 , D4RL score: 61.803
+Train stats: actor_loss=-2.4450, bc_mse=0.0550, critic_loss=4.1231, q_mean=232.6831
+Episode scores: 58.30, 58.51, 56.39, 49.22, 56.11, 59.02, 54.51, 82.58, 94.68, 48.72
+Episode lengths: 577, 590, 559, 495, 553, 584, 539, 813, 919, 487
+---------------------------------------
+Time steps: 225000
+---------------------------------------
+Evaluation over 10 episodes: 1777.458 , D4RL score: 55.237
+Train stats: actor_loss=-2.4450, bc_mse=0.0550, critic_loss=4.1319, q_mean=232.7793
+Episode scores: 58.19, 53.31, 49.58, 49.78, 65.74, 52.99, 58.43, 65.04, 49.89, 49.40
+Episode lengths: 577, 530, 508, 498, 643, 536, 577, 641, 506, 502
+---------------------------------------
+Time steps: 230000
+---------------------------------------
+Evaluation over 10 episodes: 1471.311 , D4RL score: 45.830
+Train stats: actor_loss=-2.4451, bc_mse=0.0549, critic_loss=4.1064, q_mean=232.6901
+Episode scores: 44.44, 48.61, 52.45, 45.40, 44.49, 40.15, 42.24, 47.18, 48.05, 45.28
+Episode lengths: 446, 488, 523, 454, 446, 416, 430, 470, 477, 453
+---------------------------------------
+Time steps: 235000
+---------------------------------------
+Evaluation over 10 episodes: 1497.927 , D4RL score: 46.648
+Train stats: actor_loss=-2.4453, bc_mse=0.0547, critic_loss=4.1234, q_mean=232.8226
+Episode scores: 48.84, 40.18, 66.15, 40.97, 42.05, 50.51, 43.35, 45.56, 47.46, 41.42
+Episode lengths: 487, 410, 646, 417, 423, 502, 434, 452, 469, 420
+---------------------------------------
+Time steps: 240000
+---------------------------------------
+Evaluation over 10 episodes: 1722.410 , D4RL score: 53.546
+Train stats: actor_loss=-2.4453, bc_mse=0.0547, critic_loss=4.0783, q_mean=232.8449
+Episode scores: 42.60, 58.03, 53.90, 52.20, 47.70, 45.77, 54.61, 70.56, 51.16, 58.93
+Episode lengths: 429, 580, 532, 519, 471, 451, 537, 689, 512, 582
+---------------------------------------
+Time steps: 245000
+---------------------------------------
+Evaluation over 10 episodes: 1799.041 , D4RL score: 55.900
+Train stats: actor_loss=-2.4455, bc_mse=0.0545, critic_loss=4.0785, q_mean=232.8417
+Episode scores: 52.68, 49.58, 85.65, 48.56, 52.66, 56.73, 58.90, 55.62, 51.61, 47.01
+Episode lengths: 522, 497, 844, 486, 525, 560, 581, 545, 516, 468
+---------------------------------------
+Time steps: 250000
+---------------------------------------
+Evaluation over 10 episodes: 2006.701 , D4RL score: 62.281
+Train stats: actor_loss=-2.4454, bc_mse=0.0546, critic_loss=4.0768, q_mean=232.9911
+Episode scores: 98.36, 50.05, 54.47, 87.20, 59.02, 55.78, 50.82, 55.65, 46.04, 65.43
+Episode lengths: 957, 507, 547, 862, 592, 553, 507, 551, 460, 642
+---------------------------------------
+Time steps: 255000
+---------------------------------------
+Evaluation over 10 episodes: 1821.503 , D4RL score: 56.590
+Train stats: actor_loss=-2.4454, bc_mse=0.0546, critic_loss=4.0630, q_mean=232.9418
+Episode scores: 66.07, 40.31, 45.16, 65.69, 72.65, 54.84, 49.28, 67.37, 49.63, 54.92
+Episode lengths: 650, 415, 451, 642, 702, 540, 501, 670, 504, 542
+---------------------------------------
+Time steps: 260000
+---------------------------------------
+Evaluation over 10 episodes: 1966.082 , D4RL score: 61.033
+Train stats: actor_loss=-2.4455, bc_mse=0.0545, critic_loss=4.0610, q_mean=233.0882
+Episode scores: 49.54, 76.30, 67.81, 69.24, 59.83, 59.01, 59.51, 57.01, 58.99, 53.08
+Episode lengths: 505, 749, 677, 687, 594, 594, 601, 563, 587, 532
+---------------------------------------
+Time steps: 265000
+---------------------------------------
+Evaluation over 10 episodes: 1697.099 , D4RL score: 52.768
+Train stats: actor_loss=-2.4452, bc_mse=0.0548, critic_loss=4.0944, q_mean=232.9308
+Episode scores: 50.31, 48.62, 48.52, 51.48, 51.66, 53.93, 65.12, 53.44, 49.43, 55.16
+Episode lengths: 510, 483, 483, 509, 516, 542, 635, 537, 493, 543
+---------------------------------------
+Time steps: 270000
+---------------------------------------
+Evaluation over 10 episodes: 1676.723 , D4RL score: 52.142
+Train stats: actor_loss=-2.4456, bc_mse=0.0544, critic_loss=4.0355, q_mean=233.0264
+Episode scores: 64.19, 53.36, 58.65, 40.95, 43.66, 59.10, 53.61, 53.52, 51.07, 43.30
+Episode lengths: 628, 528, 581, 420, 438, 587, 533, 530, 513, 436
+---------------------------------------
+Time steps: 275000
+---------------------------------------
+Evaluation over 10 episodes: 2318.174 , D4RL score: 71.851
+Train stats: actor_loss=-2.4457, bc_mse=0.0543, critic_loss=4.0219, q_mean=233.0654
+Episode scores: 83.08, 58.03, 64.33, 56.68, 59.64, 100.42, 57.47, 99.07, 61.87, 77.91
+Episode lengths: 810, 578, 633, 564, 594, 970, 570, 1000, 613, 771
+---------------------------------------
+Time steps: 280000
+---------------------------------------
+Evaluation over 10 episodes: 1893.862 , D4RL score: 58.814
+Train stats: actor_loss=-2.4456, bc_mse=0.0544, critic_loss=4.0229, q_mean=233.1387
+Episode scores: 49.52, 50.32, 55.98, 57.31, 57.40, 57.68, 52.90, 51.41, 98.27, 57.33
+Episode lengths: 505, 510, 555, 565, 580, 575, 529, 517, 950, 568
+---------------------------------------
+Time steps: 285000
+---------------------------------------
+Evaluation over 10 episodes: 1786.977 , D4RL score: 55.530
+Train stats: actor_loss=-2.4456, bc_mse=0.0544, critic_loss=4.0385, q_mean=233.2017
+Episode scores: 49.14, 52.70, 50.12, 50.08, 49.21, 57.73, 79.56, 50.31, 60.22, 56.23
+Episode lengths: 496, 528, 503, 507, 494, 572, 782, 510, 600, 557
+---------------------------------------
+Time steps: 290000
+---------------------------------------
+Evaluation over 10 episodes: 1736.720 , D4RL score: 53.985
+Train stats: actor_loss=-2.4458, bc_mse=0.0542, critic_loss=4.0517, q_mean=233.3325
+Episode scores: 52.47, 52.14, 56.06, 48.95, 54.31, 50.79, 57.17, 54.56, 58.50, 54.92
+Episode lengths: 531, 524, 558, 504, 538, 518, 574, 548, 593, 548
+---------------------------------------
+Time steps: 295000
+---------------------------------------
+Evaluation over 10 episodes: 2002.635 , D4RL score: 62.156
+Train stats: actor_loss=-2.4458, bc_mse=0.0542, critic_loss=3.9741, q_mean=233.2767
+Episode scores: 49.48, 57.72, 52.54, 51.18, 49.42, 53.78, 87.63, 67.16, 98.80, 53.86
+Episode lengths: 494, 567, 524, 515, 505, 534, 854, 667, 958, 533
+---------------------------------------
+Time steps: 300000
+---------------------------------------
+Evaluation over 10 episodes: 1808.073 , D4RL score: 56.178
+Train stats: actor_loss=-2.4458, bc_mse=0.0542, critic_loss=3.9809, q_mean=233.3817
+Episode scores: 66.56, 56.81, 48.67, 53.93, 57.80, 55.42, 59.26, 48.10, 55.52, 59.69
+Episode lengths: 661, 557, 483, 526, 575, 547, 582, 476, 545, 589
+---------------------------------------
+Time steps: 305000
+---------------------------------------
+Evaluation over 10 episodes: 1952.341 , D4RL score: 60.611
+Train stats: actor_loss=-2.4456, bc_mse=0.0544, critic_loss=3.9933, q_mean=233.3505
+Episode scores: 47.62, 55.25, 89.48, 49.75, 83.63, 49.69, 57.77, 67.00, 56.18, 49.73
+Episode lengths: 475, 546, 873, 506, 814, 506, 567, 670, 555, 506
+---------------------------------------
+Time steps: 310000
+---------------------------------------
+Evaluation over 10 episodes: 1419.971 , D4RL score: 44.253
+Train stats: actor_loss=-2.4460, bc_mse=0.0540, critic_loss=3.9982, q_mean=233.6214
+Episode scores: 40.04, 39.86, 55.63, 40.01, 47.88, 40.23, 39.72, 41.81, 48.94, 48.40
+Episode lengths: 413, 412, 546, 414, 480, 415, 411, 425, 490, 484
+---------------------------------------
+Time steps: 315000
+---------------------------------------
+Evaluation over 10 episodes: 1926.448 , D4RL score: 59.815
+Train stats: actor_loss=-2.4455, bc_mse=0.0544, critic_loss=3.9576, q_mean=233.5382
+Episode scores: 59.90, 51.05, 55.83, 67.70, 66.01, 78.14, 52.30, 50.34, 56.66, 60.23
+Episode lengths: 588, 515, 549, 673, 643, 764, 520, 506, 551, 594
+---------------------------------------
+Time steps: 320000
+---------------------------------------
+Evaluation over 10 episodes: 1945.527 , D4RL score: 60.401
+Train stats: actor_loss=-2.4461, bc_mse=0.0539, critic_loss=3.9695, q_mean=233.7052
+Episode scores: 62.17, 60.90, 56.82, 56.45, 55.45, 57.37, 57.17, 57.86, 56.88, 82.93
+Episode lengths: 622, 608, 574, 564, 548, 579, 580, 589, 574, 806
+---------------------------------------
+Time steps: 325000
+---------------------------------------
+Evaluation over 10 episodes: 1839.316 , D4RL score: 57.138
+Train stats: actor_loss=-2.4462, bc_mse=0.0538, critic_loss=4.0152, q_mean=233.8202
+Episode scores: 58.10, 57.51, 55.00, 57.91, 54.66, 57.35, 61.22, 54.24, 57.71, 57.68
+Episode lengths: 587, 576, 549, 579, 546, 580, 607, 548, 572, 580
+---------------------------------------
+Time steps: 330000
+---------------------------------------
+Evaluation over 10 episodes: 1894.137 , D4RL score: 58.822
+Train stats: actor_loss=-2.4460, bc_mse=0.0540, critic_loss=3.9531, q_mean=233.7769
+Episode scores: 58.13, 57.83, 56.22, 57.68, 78.58, 53.71, 58.12, 58.47, 58.10, 51.40
+Episode lengths: 583, 581, 557, 580, 771, 539, 576, 587, 581, 516
+---------------------------------------
+Time steps: 335000
+---------------------------------------
+Evaluation over 10 episodes: 1781.035 , D4RL score: 55.347
+Train stats: actor_loss=-2.4458, bc_mse=0.0542, critic_loss=4.0034, q_mean=233.7966
+Episode scores: 57.80, 55.63, 57.60, 56.09, 49.26, 57.42, 57.53, 52.68, 55.55, 53.91
+Episode lengths: 588, 558, 582, 559, 503, 582, 578, 532, 555, 538
+---------------------------------------
+Time steps: 340000
+---------------------------------------
+Evaluation over 10 episodes: 1626.589 , D4RL score: 50.601
+Train stats: actor_loss=-2.4461, bc_mse=0.0539, critic_loss=3.9771, q_mean=233.7968
+Episode scores: 71.48, 49.69, 48.47, 52.28, 55.53, 39.66, 40.27, 49.47, 42.29, 56.88
+Episode lengths: 699, 503, 481, 521, 551, 409, 412, 491, 428, 559
+---------------------------------------
+Time steps: 345000
+---------------------------------------
+Evaluation over 10 episodes: 1735.766 , D4RL score: 53.956
+Train stats: actor_loss=-2.4461, bc_mse=0.0539, critic_loss=3.9979, q_mean=233.9539
+Episode scores: 59.22, 54.80, 50.67, 48.41, 46.35, 54.17, 66.52, 49.49, 59.50, 50.43
+Episode lengths: 587, 545, 505, 489, 468, 539, 652, 502, 588, 513
+---------------------------------------
+Time steps: 350000
+---------------------------------------
+Evaluation over 10 episodes: 1990.331 , D4RL score: 61.778
+Train stats: actor_loss=-2.4461, bc_mse=0.0539, critic_loss=3.9809, q_mean=233.9674
+Episode scores: 48.22, 55.20, 55.84, 67.86, 77.64, 55.54, 61.96, 79.95, 56.71, 58.85
+Episode lengths: 484, 550, 555, 677, 775, 551, 614, 784, 562, 595
+---------------------------------------
+Time steps: 355000
+---------------------------------------
+Evaluation over 10 episodes: 1833.273 , D4RL score: 56.952
+Train stats: actor_loss=-2.4462, bc_mse=0.0538, critic_loss=3.9942, q_mean=234.0746
+Episode scores: 48.80, 54.45, 67.04, 67.01, 54.72, 55.97, 62.89, 48.04, 52.47, 58.12
+Episode lengths: 503, 541, 673, 672, 544, 564, 618, 487, 525, 587
+---------------------------------------
+Time steps: 360000
+---------------------------------------
+Evaluation over 10 episodes: 1680.436 , D4RL score: 52.256
+Train stats: actor_loss=-2.4462, bc_mse=0.0538, critic_loss=3.9994, q_mean=234.0164
+Episode scores: 58.81, 49.46, 47.85, 48.43, 67.45, 68.04, 39.90, 53.62, 40.51, 48.49
+Episode lengths: 585, 502, 472, 482, 660, 678, 411, 532, 415, 482
+---------------------------------------
+Time steps: 365000
+---------------------------------------
+Evaluation over 10 episodes: 1418.430 , D4RL score: 44.206
+Train stats: actor_loss=-2.4461, bc_mse=0.0539, critic_loss=4.0153, q_mean=234.1203
+Episode scores: 57.15, 39.66, 41.87, 39.65, 48.13, 39.83, 42.28, 51.69, 42.04, 39.74
+Episode lengths: 562, 409, 425, 408, 479, 413, 429, 518, 426, 409
+---------------------------------------
+Time steps: 370000
+---------------------------------------
+Evaluation over 10 episodes: 1848.452 , D4RL score: 57.418
+Train stats: actor_loss=-2.4462, bc_mse=0.0538, critic_loss=3.9910, q_mean=234.0430
+Episode scores: 57.31, 55.01, 58.45, 58.08, 58.74, 56.74, 58.06, 56.95, 56.74, 58.10
+Episode lengths: 576, 550, 589, 584, 588, 568, 586, 573, 569, 584
+---------------------------------------
+Time steps: 375000
+---------------------------------------
+Evaluation over 10 episodes: 1996.944 , D4RL score: 61.981
+Train stats: actor_loss=-2.4462, bc_mse=0.0538, critic_loss=3.9810, q_mean=234.0418
+Episode scores: 63.45, 47.78, 57.03, 55.38, 45.48, 55.74, 56.60, 77.64, 74.97, 85.74
+Episode lengths: 627, 473, 558, 548, 453, 552, 554, 767, 726, 837
+---------------------------------------
+Time steps: 380000
+---------------------------------------
+Evaluation over 10 episodes: 1782.282 , D4RL score: 55.385
+Train stats: actor_loss=-2.4464, bc_mse=0.0536, critic_loss=3.9674, q_mean=234.1818
+Episode scores: 56.88, 56.97, 55.52, 55.12, 45.48, 56.89, 58.46, 58.52, 54.36, 55.66
+Episode lengths: 562, 567, 551, 547, 453, 559, 584, 584, 542, 550
+---------------------------------------
+Time steps: 385000
+---------------------------------------
+Evaluation over 10 episodes: 1827.361 , D4RL score: 56.770
+Train stats: actor_loss=-2.4465, bc_mse=0.0535, critic_loss=3.9886, q_mean=234.1774
+Episode scores: 64.34, 77.63, 50.64, 49.31, 50.93, 57.30, 58.85, 49.25, 53.58, 55.88
+Episode lengths: 626, 766, 509, 489, 503, 559, 577, 490, 529, 544
+---------------------------------------
+Time steps: 390000
+---------------------------------------
+Evaluation over 10 episodes: 1888.290 , D4RL score: 58.642
+Train stats: actor_loss=-2.4464, bc_mse=0.0536, critic_loss=3.9913, q_mean=234.1706
+Episode scores: 51.91, 54.22, 55.30, 88.99, 57.35, 58.08, 54.56, 55.52, 58.28, 52.23
+Episode lengths: 519, 532, 550, 868, 570, 581, 535, 549, 584, 522
+---------------------------------------
+Time steps: 395000
+---------------------------------------
+Evaluation over 10 episodes: 1732.935 , D4RL score: 53.869
+Train stats: actor_loss=-2.4463, bc_mse=0.0537, critic_loss=4.0116, q_mean=234.1617
+Episode scores: 57.55, 46.65, 46.90, 49.35, 89.61, 43.52, 47.88, 60.64, 47.15, 49.45
+Episode lengths: 576, 460, 463, 491, 869, 434, 470, 599, 465, 493
+---------------------------------------
+Time steps: 400000
+---------------------------------------
+Evaluation over 10 episodes: 1812.101 , D4RL score: 56.302
+Train stats: actor_loss=-2.4465, bc_mse=0.0535, critic_loss=4.0113, q_mean=234.1528
+Episode scores: 50.47, 65.96, 51.89, 49.10, 67.64, 49.34, 63.37, 61.47, 50.36, 53.42
+Episode lengths: 509, 647, 518, 491, 663, 501, 623, 607, 508, 527
+---------------------------------------
+Time steps: 405000
+---------------------------------------
+Evaluation over 10 episodes: 1903.384 , D4RL score: 59.106
+Train stats: actor_loss=-2.4464, bc_mse=0.0536, critic_loss=4.0043, q_mean=233.9320
+Episode scores: 76.72, 52.33, 61.27, 59.06, 66.52, 56.71, 55.33, 51.38, 56.21, 55.53
+Episode lengths: 762, 520, 609, 582, 660, 565, 551, 518, 550, 547
+---------------------------------------
+Time steps: 410000
+---------------------------------------
+Evaluation over 10 episodes: 1709.830 , D4RL score: 53.159
+Train stats: actor_loss=-2.4464, bc_mse=0.0536, critic_loss=4.0054, q_mean=233.9755
+Episode scores: 49.64, 54.10, 55.38, 51.92, 54.04, 53.29, 57.24, 54.89, 52.88, 48.22
+Episode lengths: 506, 536, 549, 517, 534, 532, 566, 545, 532, 479
+---------------------------------------
+Time steps: 415000
+---------------------------------------
+Evaluation over 10 episodes: 1903.455 , D4RL score: 59.108
+Train stats: actor_loss=-2.4465, bc_mse=0.0535, critic_loss=4.0370, q_mean=234.1565
+Episode scores: 58.63, 49.79, 43.83, 64.79, 78.15, 65.92, 56.30, 59.76, 47.14, 66.78
+Episode lengths: 577, 503, 437, 633, 768, 647, 549, 586, 466, 662
+---------------------------------------
+Time steps: 420000
+---------------------------------------
+Evaluation over 10 episodes: 1734.211 , D4RL score: 53.908
+Train stats: actor_loss=-2.4465, bc_mse=0.0535, critic_loss=3.9865, q_mean=234.2123
+Episode scores: 42.75, 46.53, 53.44, 57.96, 57.57, 51.86, 67.97, 51.16, 56.05, 53.80
+Episode lengths: 433, 464, 533, 584, 573, 520, 672, 508, 554, 529
+---------------------------------------
+Time steps: 425000
+---------------------------------------
+Evaluation over 10 episodes: 1974.702 , D4RL score: 61.298
+Train stats: actor_loss=-2.4465, bc_mse=0.0535, critic_loss=3.9707, q_mean=234.0860
+Episode scores: 54.04, 49.17, 60.02, 75.32, 57.74, 58.93, 58.21, 61.22, 54.25, 84.07
+Episode lengths: 534, 500, 598, 741, 578, 588, 577, 609, 537, 822
+---------------------------------------
+Time steps: 430000
+---------------------------------------
+Evaluation over 10 episodes: 1630.164 , D4RL score: 50.711
+Train stats: actor_loss=-2.4465, bc_mse=0.0535, critic_loss=3.9269, q_mean=234.1983
+Episode scores: 50.50, 50.50, 62.56, 47.79, 45.55, 51.05, 53.10, 50.04, 48.24, 47.79
+Episode lengths: 509, 502, 615, 472, 452, 514, 521, 506, 479, 472
+---------------------------------------
+Time steps: 435000
+---------------------------------------
+Evaluation over 10 episodes: 1860.435 , D4RL score: 57.787
+Train stats: actor_loss=-2.4466, bc_mse=0.0534, critic_loss=3.9500, q_mean=234.1290
+Episode scores: 55.20, 57.11, 49.32, 55.05, 56.09, 55.84, 57.21, 59.26, 65.60, 67.17
+Episode lengths: 548, 567, 506, 548, 558, 557, 568, 598, 647, 673
+---------------------------------------
+Time steps: 440000
+---------------------------------------
+Evaluation over 10 episodes: 1868.883 , D4RL score: 58.046
+Train stats: actor_loss=-2.4467, bc_mse=0.0533, critic_loss=3.9952, q_mean=234.2086
+Episode scores: 50.83, 44.93, 56.26, 46.69, 70.21, 57.94, 84.26, 57.75, 53.95, 57.65
+Episode lengths: 510, 446, 548, 461, 688, 577, 825, 569, 531, 567
+---------------------------------------
+Time steps: 445000
+---------------------------------------
+Evaluation over 10 episodes: 1528.857 , D4RL score: 47.599
+Train stats: actor_loss=-2.4466, bc_mse=0.0534, critic_loss=4.0060, q_mean=234.2565
+Episode scores: 46.28, 50.02, 49.42, 50.05, 40.84, 55.27, 44.39, 49.08, 43.49, 47.15
+Episode lengths: 455, 503, 488, 498, 413, 539, 441, 480, 435, 464
+---------------------------------------
+Time steps: 450000
+---------------------------------------
+Evaluation over 10 episodes: 1677.700 , D4RL score: 52.172
+Train stats: actor_loss=-2.4466, bc_mse=0.0534, critic_loss=3.9604, q_mean=234.1767
+Episode scores: 59.85, 50.13, 50.53, 51.54, 54.14, 49.99, 50.31, 48.40, 54.31, 52.52
+Episode lengths: 594, 504, 508, 519, 537, 499, 507, 480, 537, 525
+---------------------------------------
+Time steps: 455000
+---------------------------------------
+Evaluation over 10 episodes: 1829.395 , D4RL score: 56.833
+Train stats: actor_loss=-2.4465, bc_mse=0.0534, critic_loss=3.9375, q_mean=234.1801
+Episode scores: 59.96, 58.82, 58.16, 67.12, 56.66, 52.68, 53.47, 56.37, 54.62, 50.47
+Episode lengths: 595, 575, 581, 665, 553, 517, 527, 556, 538, 508
+---------------------------------------
+Time steps: 460000
+---------------------------------------
+Evaluation over 10 episodes: 2042.102 , D4RL score: 63.369
+Train stats: actor_loss=-2.4465, bc_mse=0.0535, critic_loss=3.9345, q_mean=234.0100
+Episode scores: 48.28, 59.00, 51.21, 100.71, 73.47, 81.21, 52.28, 56.98, 57.76, 52.79
+Episode lengths: 483, 585, 515, 1000, 715, 790, 521, 566, 569, 525
+---------------------------------------
+Time steps: 465000
+---------------------------------------
+Evaluation over 10 episodes: 1918.129 , D4RL score: 59.559
+Train stats: actor_loss=-2.4467, bc_mse=0.0533, critic_loss=3.9593, q_mean=234.1681
+Episode scores: 51.37, 57.74, 64.35, 66.07, 55.13, 56.06, 56.71, 54.80, 57.32, 76.05
+Episode lengths: 518, 576, 634, 642, 543, 560, 564, 545, 574, 744
+---------------------------------------
+Time steps: 470000
+---------------------------------------
+Evaluation over 10 episodes: 1858.086 , D4RL score: 57.714
+Train stats: actor_loss=-2.4467, bc_mse=0.0533, critic_loss=3.9751, q_mean=234.1137
+Episode scores: 54.21, 56.88, 51.82, 49.96, 55.97, 65.15, 56.34, 52.73, 59.42, 74.67
+Episode lengths: 537, 560, 519, 504, 554, 637, 556, 525, 586, 733
+---------------------------------------
+Time steps: 475000
+---------------------------------------
+Evaluation over 10 episodes: 1998.130 , D4RL score: 62.017
+Train stats: actor_loss=-2.4466, bc_mse=0.0534, critic_loss=3.9764, q_mean=234.0408
+Episode scores: 52.69, 102.30, 68.57, 41.73, 66.92, 70.64, 56.25, 57.11, 57.69, 46.29
+Episode lengths: 518, 1000, 681, 423, 653, 687, 560, 564, 566, 458
+---------------------------------------
+Time steps: 480000
+---------------------------------------
+Evaluation over 10 episodes: 1943.268 , D4RL score: 60.332
+Train stats: actor_loss=-2.4469, bc_mse=0.0531, critic_loss=3.9969, q_mean=234.2075
+Episode scores: 57.78, 57.37, 58.23, 57.65, 83.99, 49.74, 56.49, 69.42, 57.30, 55.35
+Episode lengths: 566, 564, 569, 568, 810, 491, 554, 681, 563, 543
+---------------------------------------
+Time steps: 485000
+---------------------------------------
+Evaluation over 10 episodes: 1547.315 , D4RL score: 48.166
+Train stats: actor_loss=-2.4467, bc_mse=0.0533, critic_loss=3.9469, q_mean=234.2723
+Episode scores: 48.99, 50.58, 55.99, 45.63, 47.51, 48.81, 41.56, 54.42, 40.88, 47.29
+Episode lengths: 489, 510, 554, 453, 469, 486, 423, 536, 419, 467
+---------------------------------------
+Time steps: 490000
+---------------------------------------
+Evaluation over 10 episodes: 2039.227 , D4RL score: 63.280
+Train stats: actor_loss=-2.4469, bc_mse=0.0531, critic_loss=3.9661, q_mean=234.2950
+Episode scores: 64.11, 68.42, 51.41, 50.74, 83.59, 76.25, 79.27, 57.46, 52.75, 48.81
+Episode lengths: 631, 665, 516, 509, 811, 749, 777, 580, 524, 483
+---------------------------------------
+Time steps: 495000
+---------------------------------------
+Evaluation over 10 episodes: 1811.449 , D4RL score: 56.281
+Train stats: actor_loss=-2.4469, bc_mse=0.0531, critic_loss=3.9306, q_mean=234.3447
+Episode scores: 59.23, 49.32, 54.91, 57.90, 72.30, 52.19, 54.40, 49.29, 55.45, 57.81
+Episode lengths: 594, 489, 536, 565, 703, 522, 533, 489, 548, 570
+---------------------------------------
+Time steps: 500000
+---------------------------------------
+Evaluation over 10 episodes: 1846.452 , D4RL score: 57.357
+Train stats: actor_loss=-2.4467, bc_mse=0.0532, critic_loss=3.9611, q_mean=234.3463
+Episode scores: 63.95, 54.65, 55.94, 63.38, 54.69, 56.50, 57.42, 52.46, 57.76, 56.81
+Episode lengths: 627, 543, 554, 625, 544, 560, 578, 527, 579, 564
+---------------------------------------
+Time steps: 505000
+---------------------------------------
+Evaluation over 10 episodes: 1928.704 , D4RL score: 59.884
+Train stats: actor_loss=-2.4467, bc_mse=0.0533, critic_loss=3.9568, q_mean=234.3039
+Episode scores: 73.75, 72.72, 55.74, 56.92, 51.46, 55.67, 57.28, 62.33, 57.24, 55.74
+Episode lengths: 737, 715, 556, 569, 518, 556, 574, 617, 563, 552
+---------------------------------------
+Time steps: 510000
+---------------------------------------
+Evaluation over 10 episodes: 1908.030 , D4RL score: 59.249
+Train stats: actor_loss=-2.4468, bc_mse=0.0532, critic_loss=3.9197, q_mean=234.2050
+Episode scores: 55.71, 67.21, 58.68, 52.20, 54.58, 58.63, 58.49, 67.07, 67.24, 52.68
+Episode lengths: 550, 664, 582, 521, 537, 588, 586, 669, 659, 524
+---------------------------------------
+Time steps: 515000
+---------------------------------------
+Evaluation over 10 episodes: 1714.716 , D4RL score: 53.309
+Train stats: actor_loss=-2.4469, bc_mse=0.0531, critic_loss=3.9788, q_mean=234.4151
+Episode scores: 59.07, 50.06, 51.34, 50.09, 51.06, 49.82, 66.29, 49.47, 51.72, 54.17
+Episode lengths: 587, 505, 515, 504, 513, 504, 653, 502, 517, 535
+---------------------------------------
+Time steps: 520000
+---------------------------------------
+Evaluation over 10 episodes: 1796.975 , D4RL score: 55.837
+Train stats: actor_loss=-2.4468, bc_mse=0.0532, critic_loss=3.9764, q_mean=234.4500
+Episode scores: 58.97, 65.50, 55.65, 50.09, 48.66, 49.05, 69.92, 51.75, 49.41, 59.36
+Episode lengths: 586, 642, 555, 510, 488, 493, 690, 522, 505, 595
+---------------------------------------
+Time steps: 525000
+---------------------------------------
+Evaluation over 10 episodes: 1901.813 , D4RL score: 59.058
+Train stats: actor_loss=-2.4467, bc_mse=0.0533, critic_loss=3.9278, q_mean=234.3184
+Episode scores: 60.72, 56.34, 56.79, 66.76, 55.25, 57.71, 51.59, 53.91, 73.13, 58.37
+Episode lengths: 602, 553, 560, 655, 546, 566, 511, 536, 711, 576
+---------------------------------------
+Time steps: 530000
+---------------------------------------
+Evaluation over 10 episodes: 1446.391 , D4RL score: 45.065
+Train stats: actor_loss=-2.4470, bc_mse=0.0530, critic_loss=3.9564, q_mean=234.4143
+Episode scores: 51.50, 44.93, 65.44, 24.97, 25.91, 62.73, 33.17, 74.52, 41.33, 26.14
+Episode lengths: 530, 455, 665, 269, 277, 642, 350, 753, 419, 277
+---------------------------------------
+Time steps: 535000
+---------------------------------------
+Evaluation over 10 episodes: 1866.177 , D4RL score: 57.963
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=3.9220, q_mean=234.3476
+Episode scores: 56.66, 53.97, 54.91, 52.21, 47.00, 79.10, 57.55, 61.65, 49.80, 66.78
+Episode lengths: 561, 533, 542, 521, 467, 773, 568, 602, 496, 653
+---------------------------------------
+Time steps: 540000
+---------------------------------------
+Evaluation over 10 episodes: 1841.990 , D4RL score: 57.220
+Train stats: actor_loss=-2.4468, bc_mse=0.0532, critic_loss=3.9935, q_mean=234.4261
+Episode scores: 50.99, 72.78, 59.40, 58.76, 69.18, 49.43, 58.41, 49.65, 50.77, 52.82
+Episode lengths: 514, 714, 588, 588, 689, 496, 588, 506, 515, 531
+---------------------------------------
+Time steps: 545000
+---------------------------------------
+Evaluation over 10 episodes: 1832.904 , D4RL score: 56.941
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=3.9603, q_mean=234.5178
+Episode scores: 57.32, 53.98, 57.11, 56.76, 53.00, 55.69, 57.73, 52.39, 76.39, 49.03
+Episode lengths: 565, 534, 558, 558, 520, 554, 571, 524, 763, 490
+---------------------------------------
+Time steps: 550000
+---------------------------------------
+Evaluation over 10 episodes: 2222.004 , D4RL score: 68.896
+Train stats: actor_loss=-2.4470, bc_mse=0.0530, critic_loss=3.9820, q_mean=234.3007
+Episode scores: 57.58, 62.08, 72.79, 85.41, 57.65, 64.49, 60.18, 65.17, 62.71, 100.90
+Episode lengths: 589, 627, 722, 853, 585, 644, 603, 655, 625, 1000
+---------------------------------------
+Time steps: 555000
+---------------------------------------
+Evaluation over 10 episodes: 1878.811 , D4RL score: 58.351
+Train stats: actor_loss=-2.4470, bc_mse=0.0530, critic_loss=3.9993, q_mean=234.4147
+Episode scores: 54.81, 54.63, 64.54, 42.93, 55.05, 58.03, 66.93, 82.03, 55.80, 48.78
+Episode lengths: 546, 545, 638, 430, 542, 584, 659, 803, 557, 485
+---------------------------------------
+Time steps: 560000
+---------------------------------------
+Evaluation over 10 episodes: 1763.297 , D4RL score: 54.802
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=3.9589, q_mean=234.5294
+Episode scores: 48.89, 57.92, 52.85, 51.37, 64.80, 55.36, 50.84, 55.85, 53.84, 56.29
+Episode lengths: 487, 573, 526, 515, 635, 542, 512, 550, 534, 561
+---------------------------------------
+Time steps: 565000
+---------------------------------------
+Evaluation over 10 episodes: 1903.863 , D4RL score: 59.121
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=3.9893, q_mean=234.4244
+Episode scores: 55.60, 54.54, 65.08, 49.18, 54.95, 56.00, 88.96, 53.54, 56.19, 57.18
+Episode lengths: 552, 544, 639, 492, 546, 560, 868, 535, 561, 562
+---------------------------------------
+Time steps: 570000
+---------------------------------------
+Evaluation over 10 episodes: 1717.062 , D4RL score: 53.381
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=4.0244, q_mean=234.6121
+Episode scores: 75.40, 50.65, 40.47, 49.26, 57.26, 40.81, 59.60, 55.44, 46.94, 57.98
+Episode lengths: 741, 510, 413, 488, 560, 417, 589, 540, 463, 572
+---------------------------------------
+Time steps: 575000
+---------------------------------------
+Evaluation over 10 episodes: 1917.845 , D4RL score: 59.551
+Train stats: actor_loss=-2.4470, bc_mse=0.0530, critic_loss=3.9965, q_mean=234.6016
+Episode scores: 54.12, 66.11, 52.85, 68.70, 51.38, 57.82, 53.83, 83.43, 52.66, 54.62
+Episode lengths: 535, 641, 529, 677, 515, 581, 533, 807, 525, 542
+---------------------------------------
+Time steps: 580000
+---------------------------------------
+Evaluation over 10 episodes: 1964.028 , D4RL score: 60.970
+Train stats: actor_loss=-2.4472, bc_mse=0.0528, critic_loss=4.0425, q_mean=234.6605
+Episode scores: 57.81, 56.54, 66.19, 65.17, 57.18, 64.88, 53.78, 55.87, 75.69, 56.58
+Episode lengths: 580, 569, 656, 648, 564, 633, 538, 551, 751, 569
+---------------------------------------
+Time steps: 585000
+---------------------------------------
+Evaluation over 10 episodes: 1743.862 , D4RL score: 54.205
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=4.0381, q_mean=234.5740
+Episode scores: 69.12, 50.44, 52.30, 52.36, 55.54, 54.03, 57.54, 48.49, 51.84, 50.39
+Episode lengths: 684, 508, 524, 521, 546, 535, 562, 483, 518, 507
+---------------------------------------
+Time steps: 590000
+---------------------------------------
+Evaluation over 10 episodes: 1779.189 , D4RL score: 55.290
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=4.0090, q_mean=234.5517
+Episode scores: 54.80, 55.12, 76.79, 48.22, 50.35, 54.50, 56.10, 41.21, 57.67, 58.14
+Episode lengths: 533, 543, 750, 474, 508, 539, 549, 418, 571, 572
+---------------------------------------
+Time steps: 595000
+---------------------------------------
+Evaluation over 10 episodes: 1855.343 , D4RL score: 57.630
+Train stats: actor_loss=-2.4470, bc_mse=0.0530, critic_loss=4.0087, q_mean=234.5617
+Episode scores: 48.20, 58.49, 49.32, 54.94, 53.10, 55.60, 51.07, 76.20, 40.32, 89.06
+Episode lengths: 471, 577, 489, 540, 525, 541, 510, 743, 411, 862
+---------------------------------------
+Time steps: 600000
+---------------------------------------
+Evaluation over 10 episodes: 1806.920 , D4RL score: 56.142
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=4.0338, q_mean=234.6279
+Episode scores: 56.77, 55.16, 55.36, 55.22, 44.78, 46.95, 56.98, 56.78, 58.11, 75.33
+Episode lengths: 555, 538, 542, 541, 445, 463, 558, 553, 569, 742
+---------------------------------------
+Time steps: 605000
+---------------------------------------
+Evaluation over 10 episodes: 1832.916 , D4RL score: 56.941
+Train stats: actor_loss=-2.4472, bc_mse=0.0528, critic_loss=4.0210, q_mean=234.5595
+Episode scores: 55.82, 69.14, 64.44, 51.97, 49.32, 56.45, 57.04, 54.20, 51.74, 59.28
+Episode lengths: 559, 683, 642, 523, 495, 561, 565, 545, 522, 598
+---------------------------------------
+Time steps: 610000
+---------------------------------------
+Evaluation over 10 episodes: 1870.800 , D4RL score: 58.105
+Train stats: actor_loss=-2.4470, bc_mse=0.0530, critic_loss=4.0084, q_mean=234.4876
+Episode scores: 65.69, 49.54, 77.25, 46.57, 51.68, 57.63, 51.61, 55.90, 77.05, 48.12
+Episode lengths: 644, 492, 757, 460, 518, 567, 515, 550, 759, 474
+---------------------------------------
+Time steps: 615000
+---------------------------------------
+Evaluation over 10 episodes: 2168.539 , D4RL score: 67.253
+Train stats: actor_loss=-2.4470, bc_mse=0.0530, critic_loss=4.0352, q_mean=234.4944
+Episode scores: 49.25, 101.35, 49.98, 53.87, 100.18, 57.82, 51.28, 57.98, 99.67, 51.16
+Episode lengths: 494, 1000, 507, 533, 1000, 584, 513, 575, 1000, 513
+---------------------------------------
+Time steps: 620000
+---------------------------------------
+Evaluation over 10 episodes: 1974.719 , D4RL score: 61.298
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=4.0853, q_mean=234.4825
+Episode scores: 57.63, 63.11, 54.96, 54.68, 55.77, 99.81, 57.01, 60.20, 54.64, 55.16
+Episode lengths: 579, 625, 547, 540, 549, 977, 567, 601, 547, 544
+---------------------------------------
+Time steps: 625000
+---------------------------------------
+Evaluation over 10 episodes: 2128.521 , D4RL score: 66.024
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0659, q_mean=234.6596
+Episode scores: 67.22, 65.10, 58.46, 57.75, 56.64, 67.39, 65.50, 64.21, 100.96, 57.01
+Episode lengths: 673, 635, 584, 573, 560, 674, 639, 632, 1000, 565
+---------------------------------------
+Time steps: 630000
+---------------------------------------
+Evaluation over 10 episodes: 1837.087 , D4RL score: 57.069
+Train stats: actor_loss=-2.4471, bc_mse=0.0529, critic_loss=4.0732, q_mean=234.4790
+Episode scores: 61.74, 48.58, 51.34, 67.05, 57.36, 59.14, 54.71, 54.66, 63.70, 52.42
+Episode lengths: 611, 485, 516, 664, 570, 587, 543, 544, 628, 526
+---------------------------------------
+Time steps: 635000
+---------------------------------------
+Evaluation over 10 episodes: 1749.413 , D4RL score: 54.375
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0804, q_mean=234.5725
+Episode scores: 58.35, 58.06, 48.01, 46.75, 55.17, 73.41, 47.22, 51.73, 47.09, 57.98
+Episode lengths: 586, 583, 478, 463, 544, 726, 468, 521, 467, 577
+---------------------------------------
+Time steps: 640000
+---------------------------------------
+Evaluation over 10 episodes: 1829.076 , D4RL score: 56.823
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.1074, q_mean=234.6587
+Episode scores: 57.22, 56.90, 55.26, 56.67, 55.39, 57.60, 55.74, 53.43, 63.13, 56.89
+Episode lengths: 567, 563, 549, 558, 548, 574, 554, 531, 619, 562
+---------------------------------------
+Time steps: 645000
+---------------------------------------
+Evaluation over 10 episodes: 1954.428 , D4RL score: 60.675
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0875, q_mean=234.4966
+Episode scores: 55.77, 50.76, 57.23, 57.59, 62.21, 77.17, 57.43, 74.34, 55.47, 58.78
+Episode lengths: 552, 511, 565, 574, 618, 761, 573, 728, 552, 589
+---------------------------------------
+Time steps: 650000
+---------------------------------------
+Evaluation over 10 episodes: 1888.952 , D4RL score: 58.663
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0795, q_mean=234.5248
+Episode scores: 55.60, 57.47, 52.21, 46.40, 57.79, 68.48, 48.58, 63.20, 60.88, 76.01
+Episode lengths: 545, 567, 512, 458, 578, 677, 481, 613, 600, 747
+---------------------------------------
+Time steps: 655000
+---------------------------------------
+Evaluation over 10 episodes: 1975.325 , D4RL score: 61.317
+Train stats: actor_loss=-2.4472, bc_mse=0.0528, critic_loss=4.0921, q_mean=234.5548
+Episode scores: 64.07, 65.31, 49.66, 100.75, 49.74, 52.29, 57.71, 50.24, 49.72, 73.69
+Episode lengths: 627, 635, 505, 977, 505, 524, 573, 508, 505, 717
+---------------------------------------
+Time steps: 660000
+---------------------------------------
+Evaluation over 10 episodes: 2014.967 , D4RL score: 62.535
+Train stats: actor_loss=-2.4472, bc_mse=0.0528, critic_loss=4.0878, q_mean=234.6508
+Episode scores: 43.37, 56.34, 54.11, 93.62, 54.50, 56.00, 57.62, 71.81, 57.43, 80.56
+Episode lengths: 436, 556, 536, 922, 538, 549, 573, 701, 567, 787
+---------------------------------------
+Time steps: 665000
+---------------------------------------
+Evaluation over 10 episodes: 1971.231 , D4RL score: 61.191
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0511, q_mean=234.5733
+Episode scores: 56.64, 57.81, 91.21, 47.98, 54.23, 53.08, 55.40, 57.91, 55.11, 82.54
+Episode lengths: 560, 570, 880, 473, 534, 526, 543, 575, 542, 805
+---------------------------------------
+Time steps: 670000
+---------------------------------------
+Evaluation over 10 episodes: 1962.555 , D4RL score: 60.924
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0820, q_mean=234.5223
+Episode scores: 91.35, 52.86, 62.82, 56.98, 59.88, 55.77, 54.88, 61.36, 58.28, 55.06
+Episode lengths: 899, 529, 623, 562, 597, 556, 548, 611, 588, 548
+---------------------------------------
+Time steps: 675000
+---------------------------------------
+Evaluation over 10 episodes: 1827.696 , D4RL score: 56.781
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0819, q_mean=234.6240
+Episode scores: 56.20, 52.03, 54.98, 61.30, 51.01, 54.20, 57.38, 54.89, 51.55, 74.26
+Episode lengths: 554, 519, 542, 606, 512, 537, 565, 538, 515, 722
+---------------------------------------
+Time steps: 680000
+---------------------------------------
+Evaluation over 10 episodes: 1855.287 , D4RL score: 57.628
+Train stats: actor_loss=-2.4472, bc_mse=0.0528, critic_loss=4.0628, q_mean=234.3623
+Episode scores: 56.42, 56.51, 68.08, 45.78, 58.04, 57.50, 57.28, 58.25, 62.74, 55.68
+Episode lengths: 558, 555, 662, 455, 579, 569, 565, 577, 618, 544
+---------------------------------------
+Time steps: 685000
+---------------------------------------
+Evaluation over 10 episodes: 1845.309 , D4RL score: 57.322
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0899, q_mean=234.5144
+Episode scores: 54.35, 67.23, 66.77, 50.03, 65.16, 56.95, 57.56, 55.34, 49.06, 50.76
+Episode lengths: 537, 670, 666, 507, 638, 561, 568, 551, 487, 511
+---------------------------------------
+Time steps: 690000
+---------------------------------------
+Evaluation over 10 episodes: 1865.527 , D4RL score: 57.943
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0634, q_mean=234.5227
+Episode scores: 57.43, 50.07, 77.21, 53.22, 48.23, 57.37, 55.68, 56.21, 68.78, 55.23
+Episode lengths: 566, 506, 757, 527, 476, 564, 545, 557, 681, 545
+---------------------------------------
+Time steps: 695000
+---------------------------------------
+Evaluation over 10 episodes: 1764.203 , D4RL score: 54.830
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.1094, q_mean=234.6120
+Episode scores: 55.92, 56.33, 48.57, 47.78, 57.19, 56.51, 55.70, 54.73, 56.98, 58.59
+Episode lengths: 551, 558, 482, 472, 567, 555, 546, 540, 557, 579
+---------------------------------------
+Time steps: 700000
+---------------------------------------
+Evaluation over 10 episodes: 1737.286 , D4RL score: 54.003
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0764, q_mean=234.4622
+Episode scores: 65.52, 44.44, 66.61, 48.30, 40.40, 56.82, 54.70, 57.06, 57.23, 48.94
+Episode lengths: 645, 441, 662, 481, 413, 556, 542, 558, 564, 484
+---------------------------------------
+Time steps: 705000
+---------------------------------------
+Evaluation over 10 episodes: 1899.836 , D4RL score: 58.997
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0457, q_mean=234.5693
+Episode scores: 66.74, 53.70, 55.89, 53.47, 52.11, 65.18, 67.05, 66.00, 55.67, 54.16
+Episode lengths: 678, 535, 561, 532, 520, 645, 665, 657, 557, 538
+---------------------------------------
+Time steps: 710000
+---------------------------------------
+Evaluation over 10 episodes: 1845.789 , D4RL score: 57.337
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0644, q_mean=234.6035
+Episode scores: 54.96, 59.27, 55.96, 54.45, 57.04, 62.51, 56.81, 50.31, 58.17, 63.89
+Episode lengths: 543, 589, 556, 538, 562, 614, 565, 510, 577, 622
+---------------------------------------
+Time steps: 715000
+---------------------------------------
+Evaluation over 10 episodes: 1860.066 , D4RL score: 57.775
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0843, q_mean=234.6235
+Episode scores: 56.30, 74.82, 57.06, 57.94, 58.58, 50.61, 58.56, 57.25, 58.34, 48.30
+Episode lengths: 549, 734, 563, 570, 585, 510, 583, 559, 582, 477
+---------------------------------------
+Time steps: 720000
+---------------------------------------
+Evaluation over 10 episodes: 1787.044 , D4RL score: 55.532
+Train stats: actor_loss=-2.4473, bc_mse=0.0527, critic_loss=4.0855, q_mean=234.6610
+Episode scores: 54.95, 57.94, 53.39, 58.13, 55.65, 56.59, 48.69, 55.73, 60.15, 54.09
+Episode lengths: 548, 571, 529, 572, 550, 557, 483, 555, 600, 535
+---------------------------------------
+Time steps: 725000
+---------------------------------------
+Evaluation over 10 episodes: 2172.227 , D4RL score: 67.367
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0239, q_mean=234.6943
+Episode scores: 72.84, 57.65, 60.08, 91.63, 86.32, 57.47, 81.49, 52.99, 55.59, 57.59
+Episode lengths: 710, 578, 604, 899, 848, 581, 795, 528, 554, 577
+---------------------------------------
+Time steps: 730000
+---------------------------------------
+Evaluation over 10 episodes: 1913.098 , D4RL score: 59.405
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0700, q_mean=234.7895
+Episode scores: 54.29, 53.18, 52.19, 63.47, 94.01, 56.45, 55.41, 49.48, 58.03, 57.54
+Episode lengths: 536, 529, 521, 622, 907, 558, 545, 494, 580, 571
+---------------------------------------
+Time steps: 735000
+---------------------------------------
+Evaluation over 10 episodes: 1839.716 , D4RL score: 57.150
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0381, q_mean=234.6082
+Episode scores: 54.97, 78.49, 55.88, 58.59, 57.77, 58.09, 56.65, 45.14, 55.78, 50.14
+Episode lengths: 542, 776, 552, 585, 574, 578, 561, 448, 555, 500
+---------------------------------------
+Time steps: 740000
+---------------------------------------
+Evaluation over 10 episodes: 1881.188 , D4RL score: 58.424
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0235, q_mean=234.8057
+Episode scores: 53.81, 52.49, 53.45, 66.49, 57.49, 49.41, 46.25, 50.65, 100.30, 53.91
+Episode lengths: 534, 522, 527, 659, 568, 497, 457, 511, 1000, 531
+---------------------------------------
+Time steps: 745000
+---------------------------------------
+Evaluation over 10 episodes: 1745.589 , D4RL score: 54.258
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0496, q_mean=234.8043
+Episode scores: 55.54, 65.15, 54.32, 55.31, 57.40, 62.92, 41.97, 57.25, 51.46, 41.25
+Episode lengths: 546, 639, 537, 545, 565, 620, 425, 564, 515, 420
+---------------------------------------
+Time steps: 750000
+---------------------------------------
+Evaluation over 10 episodes: 1822.767 , D4RL score: 56.629
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0527, q_mean=234.9292
+Episode scores: 57.87, 55.01, 53.67, 56.32, 58.64, 54.38, 58.25, 58.15, 55.39, 58.63
+Episode lengths: 577, 547, 529, 554, 584, 543, 584, 574, 552, 587
+---------------------------------------
+Time steps: 755000
+---------------------------------------
+Evaluation over 10 episodes: 1996.440 , D4RL score: 61.965
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0232, q_mean=234.8809
+Episode scores: 62.29, 58.66, 77.62, 57.64, 57.43, 75.40, 58.77, 58.82, 56.60, 56.44
+Episode lengths: 615, 587, 755, 566, 564, 739, 579, 588, 559, 550
+---------------------------------------
+Time steps: 760000
+---------------------------------------
+Evaluation over 10 episodes: 1877.956 , D4RL score: 58.325
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0928, q_mean=234.9153
+Episode scores: 49.68, 43.39, 51.55, 59.22, 62.09, 55.63, 92.42, 47.97, 63.94, 57.36
+Episode lengths: 504, 437, 516, 596, 606, 551, 900, 475, 629, 565
+---------------------------------------
+Time steps: 765000
+---------------------------------------
+Evaluation over 10 episodes: 1899.888 , D4RL score: 58.999
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0476, q_mean=234.8801
+Episode scores: 58.34, 54.41, 53.41, 56.65, 67.27, 55.86, 56.13, 58.65, 72.50, 56.79
+Episode lengths: 594, 545, 538, 559, 664, 561, 561, 592, 708, 563
+---------------------------------------
+Time steps: 770000
+---------------------------------------
+Evaluation over 10 episodes: 2191.719 , D4RL score: 67.966
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0451, q_mean=234.8450
+Episode scores: 57.13, 61.15, 56.94, 54.24, 75.95, 66.26, 64.85, 80.02, 91.75, 71.36
+Episode lengths: 575, 600, 572, 533, 753, 672, 630, 787, 891, 691
+---------------------------------------
+Time steps: 775000
+---------------------------------------
+Evaluation over 10 episodes: 1936.011 , D4RL score: 60.109
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0834, q_mean=234.9768
+Episode scores: 64.84, 70.79, 57.28, 57.56, 54.52, 72.87, 57.64, 55.33, 52.38, 57.88
+Episode lengths: 641, 695, 570, 572, 539, 717, 580, 552, 524, 576
+---------------------------------------
+Time steps: 780000
+---------------------------------------
+Evaluation over 10 episodes: 1869.719 , D4RL score: 58.072
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0400, q_mean=234.8898
+Episode scores: 81.26, 56.34, 57.62, 57.43, 58.03, 51.85, 54.31, 57.65, 58.67, 47.56
+Episode lengths: 789, 550, 567, 566, 567, 518, 538, 565, 582, 470
+---------------------------------------
+Time steps: 785000
+---------------------------------------
+Evaluation over 10 episodes: 1742.766 , D4RL score: 54.171
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0461, q_mean=234.9671
+Episode scores: 57.43, 49.59, 48.31, 55.78, 59.73, 54.89, 61.76, 54.30, 50.50, 49.43
+Episode lengths: 573, 505, 484, 555, 594, 547, 606, 542, 511, 503
+---------------------------------------
+Time steps: 790000
+---------------------------------------
+Evaluation over 10 episodes: 2198.900 , D4RL score: 68.186
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0699, q_mean=234.8840
+Episode scores: 72.89, 55.77, 101.41, 93.17, 66.44, 56.21, 62.72, 58.42, 56.08, 58.74
+Episode lengths: 716, 551, 1000, 905, 647, 553, 615, 577, 549, 579
+---------------------------------------
+Time steps: 795000
+---------------------------------------
+Evaluation over 10 episodes: 2033.194 , D4RL score: 63.095
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0954, q_mean=235.0385
+Episode scores: 99.97, 54.82, 54.44, 67.11, 55.66, 75.31, 49.69, 49.74, 54.27, 69.93
+Episode lengths: 1000, 546, 541, 655, 548, 737, 507, 507, 538, 686
+---------------------------------------
+Time steps: 800000
+---------------------------------------
+Evaluation over 10 episodes: 1962.487 , D4RL score: 60.922
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=3.9726, q_mean=235.0088
+Episode scores: 93.24, 58.51, 51.46, 56.84, 56.98, 56.21, 55.05, 68.84, 55.02, 57.07
+Episode lengths: 895, 583, 514, 563, 564, 557, 542, 680, 543, 566
+---------------------------------------
+Time steps: 805000
+---------------------------------------
+Evaluation over 10 episodes: 1697.231 , D4RL score: 52.772
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0340, q_mean=234.9497
+Episode scores: 58.81, 50.13, 54.10, 59.19, 55.38, 56.27, 49.08, 49.51, 52.03, 43.22
+Episode lengths: 586, 507, 532, 583, 548, 551, 487, 492, 517, 433
+---------------------------------------
+Time steps: 810000
+---------------------------------------
+Evaluation over 10 episodes: 2010.957 , D4RL score: 62.412
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=4.0335, q_mean=235.2063
+Episode scores: 52.33, 58.59, 55.31, 64.43, 57.67, 67.59, 57.13, 100.83, 55.15, 55.08
+Episode lengths: 524, 586, 551, 632, 575, 669, 567, 1000, 545, 543
+---------------------------------------
+Time steps: 815000
+---------------------------------------
+Evaluation over 10 episodes: 1831.400 , D4RL score: 56.894
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0228, q_mean=235.1759
+Episode scores: 58.45, 52.02, 61.27, 46.85, 56.00, 58.65, 61.16, 58.78, 57.38, 58.38
+Episode lengths: 585, 519, 605, 463, 550, 589, 610, 589, 565, 584
+---------------------------------------
+Time steps: 820000
+---------------------------------------
+Evaluation over 10 episodes: 1794.976 , D4RL score: 55.775
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0260, q_mean=235.0980
+Episode scores: 54.14, 56.16, 54.04, 56.80, 56.48, 56.65, 58.06, 54.13, 55.73, 55.55
+Episode lengths: 539, 557, 539, 565, 563, 566, 583, 540, 558, 556
+---------------------------------------
+Time steps: 825000
+---------------------------------------
+Evaluation over 10 episodes: 1918.064 , D4RL score: 59.557
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0043, q_mean=235.0942
+Episode scores: 55.41, 57.75, 62.81, 57.09, 58.42, 57.62, 67.03, 67.12, 55.92, 56.40
+Episode lengths: 553, 583, 630, 574, 598, 585, 675, 667, 560, 570
+---------------------------------------
+Time steps: 830000
+---------------------------------------
+Evaluation over 10 episodes: 2119.125 , D4RL score: 65.735
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0349, q_mean=235.1695
+Episode scores: 57.96, 57.96, 58.65, 57.70, 63.03, 100.13, 53.64, 66.58, 85.10, 56.60
+Episode lengths: 580, 579, 584, 577, 620, 974, 533, 662, 825, 563
+---------------------------------------
+Time steps: 835000
+---------------------------------------
+Evaluation over 10 episodes: 2055.514 , D4RL score: 63.781
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0146, q_mean=235.1627
+Episode scores: 53.85, 54.85, 59.25, 85.17, 57.82, 58.30, 75.87, 54.51, 59.90, 78.29
+Episode lengths: 532, 541, 585, 832, 574, 583, 742, 540, 599, 767
+---------------------------------------
+Time steps: 840000
+---------------------------------------
+Evaluation over 10 episodes: 2015.091 , D4RL score: 62.539
+Train stats: actor_loss=-2.4474, bc_mse=0.0526, critic_loss=4.0454, q_mean=235.0911
+Episode scores: 44.16, 65.59, 57.85, 50.18, 62.64, 92.05, 77.23, 45.73, 67.89, 62.06
+Episode lengths: 442, 640, 570, 507, 609, 889, 761, 456, 664, 608
+---------------------------------------
+Time steps: 845000
+---------------------------------------
+Evaluation over 10 episodes: 1950.726 , D4RL score: 60.561
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0419, q_mean=235.1704
+Episode scores: 93.04, 56.61, 54.02, 57.19, 58.14, 50.75, 61.87, 48.41, 57.79, 67.80
+Episode lengths: 897, 558, 531, 564, 580, 510, 611, 481, 566, 676
+---------------------------------------
+Time steps: 850000
+---------------------------------------
+Evaluation over 10 episodes: 1915.375 , D4RL score: 59.475
+Train stats: actor_loss=-2.4475, bc_mse=0.0525, critic_loss=4.0306, q_mean=235.0934
+Episode scores: 58.27, 77.28, 58.22, 58.16, 57.25, 56.17, 58.37, 58.33, 56.26, 56.45
+Episode lengths: 584, 756, 579, 585, 572, 554, 581, 583, 553, 562
+---------------------------------------
+Time steps: 855000
+---------------------------------------
+Evaluation over 10 episodes: 1689.380 , D4RL score: 52.531
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0274, q_mean=235.1544
+Episode scores: 54.07, 49.10, 46.59, 57.77, 54.21, 55.13, 44.65, 49.16, 45.75, 68.88
+Episode lengths: 532, 491, 460, 580, 528, 541, 442, 494, 452, 679
+---------------------------------------
+Time steps: 860000
+---------------------------------------
+Evaluation over 10 episodes: 1919.133 , D4RL score: 59.590
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0168, q_mean=235.1928
+Episode scores: 59.22, 51.50, 48.59, 55.62, 55.42, 52.42, 82.44, 58.14, 65.52, 67.03
+Episode lengths: 590, 520, 502, 553, 550, 527, 810, 584, 653, 662
+---------------------------------------
+Time steps: 865000
+---------------------------------------
+Evaluation over 10 episodes: 1792.544 , D4RL score: 55.701
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0607, q_mean=235.0746
+Episode scores: 57.57, 57.65, 43.38, 54.25, 63.97, 62.37, 56.77, 58.39, 48.80, 53.83
+Episode lengths: 571, 569, 435, 535, 626, 621, 560, 586, 486, 531
+---------------------------------------
+Time steps: 870000
+---------------------------------------
+Evaluation over 10 episodes: 1811.739 , D4RL score: 56.290
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=4.0609, q_mean=235.1872
+Episode scores: 48.92, 58.77, 54.39, 48.41, 58.83, 55.46, 60.78, 43.29, 60.33, 73.74
+Episode lengths: 485, 584, 532, 476, 577, 545, 602, 432, 600, 716
+---------------------------------------
+Time steps: 875000
+---------------------------------------
+Evaluation over 10 episodes: 1874.106 , D4RL score: 58.207
+Train stats: actor_loss=-2.4479, bc_mse=0.0521, critic_loss=4.0385, q_mean=235.2250
+Episode scores: 93.77, 58.35, 53.42, 49.81, 51.22, 57.02, 53.69, 58.65, 54.89, 51.24
+Episode lengths: 912, 581, 534, 505, 512, 569, 536, 589, 546, 514
+---------------------------------------
+Time steps: 880000
+---------------------------------------
+Evaluation over 10 episodes: 1954.130 , D4RL score: 60.665
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0977, q_mean=235.2845
+Episode scores: 56.69, 56.36, 49.43, 73.20, 50.38, 56.31, 92.56, 55.29, 60.94, 55.50
+Episode lengths: 563, 554, 496, 712, 507, 558, 907, 552, 598, 547
+---------------------------------------
+Time steps: 885000
+---------------------------------------
+Evaluation over 10 episodes: 2027.619 , D4RL score: 62.924
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=4.0759, q_mean=235.3318
+Episode scores: 66.14, 75.40, 55.22, 58.70, 59.02, 54.83, 84.80, 58.33, 57.93, 58.87
+Episode lengths: 655, 731, 543, 585, 587, 540, 839, 588, 571, 589
+---------------------------------------
+Time steps: 890000
+---------------------------------------
+Evaluation over 10 episodes: 1893.080 , D4RL score: 58.790
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=4.0389, q_mean=235.0483
+Episode scores: 58.06, 49.24, 57.54, 58.91, 57.51, 57.97, 48.13, 75.46, 56.34, 68.73
+Episode lengths: 576, 491, 569, 587, 564, 577, 476, 732, 555, 673
+---------------------------------------
+Time steps: 895000
+---------------------------------------
+Evaluation over 10 episodes: 2191.649 , D4RL score: 67.964
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0528, q_mean=235.1369
+Episode scores: 100.21, 57.98, 99.70, 54.65, 69.47, 55.38, 67.19, 67.99, 53.96, 53.10
+Episode lengths: 1000, 572, 964, 537, 684, 555, 669, 674, 526, 525
+---------------------------------------
+Time steps: 900000
+---------------------------------------
+Evaluation over 10 episodes: 1937.496 , D4RL score: 60.154
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0398, q_mean=235.1877
+Episode scores: 56.06, 84.82, 63.94, 49.79, 56.32, 51.69, 63.39, 56.61, 52.21, 66.72
+Episode lengths: 552, 841, 628, 505, 555, 518, 623, 552, 521, 663
+---------------------------------------
+Time steps: 905000
+---------------------------------------
+Evaluation over 10 episodes: 1947.810 , D4RL score: 60.471
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=4.0516, q_mean=235.2207
+Episode scores: 57.21, 58.09, 63.60, 58.76, 49.38, 67.52, 77.70, 57.92, 57.79, 56.75
+Episode lengths: 567, 578, 623, 582, 493, 667, 770, 578, 567, 559
+---------------------------------------
+Time steps: 910000
+---------------------------------------
+Evaluation over 10 episodes: 1967.188 , D4RL score: 61.067
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0430, q_mean=235.1653
+Episode scores: 57.03, 57.41, 55.69, 80.54, 56.48, 79.29, 57.27, 51.15, 57.62, 58.19
+Episode lengths: 567, 565, 555, 790, 561, 780, 567, 515, 578, 583
+---------------------------------------
+Time steps: 915000
+---------------------------------------
+Evaluation over 10 episodes: 1936.575 , D4RL score: 60.126
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.1078, q_mean=235.2501
+Episode scores: 64.33, 56.80, 57.56, 57.82, 55.51, 57.86, 55.69, 81.12, 50.07, 64.49
+Episode lengths: 636, 562, 574, 569, 547, 578, 551, 797, 507, 625
+---------------------------------------
+Time steps: 920000
+---------------------------------------
+Evaluation over 10 episodes: 1844.898 , D4RL score: 57.309
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0123, q_mean=235.2030
+Episode scores: 51.84, 46.08, 56.52, 50.80, 56.22, 57.95, 49.31, 44.57, 58.14, 101.65
+Episode lengths: 515, 455, 559, 509, 556, 577, 492, 443, 578, 1000
+---------------------------------------
+Time steps: 925000
+---------------------------------------
+Evaluation over 10 episodes: 1985.894 , D4RL score: 61.641
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=4.0271, q_mean=235.2218
+Episode scores: 58.78, 56.79, 58.39, 83.86, 58.41, 57.11, 57.09, 52.87, 58.28, 74.83
+Episode lengths: 584, 562, 583, 814, 581, 567, 564, 526, 576, 733
+---------------------------------------
+Time steps: 930000
+---------------------------------------
+Evaluation over 10 episodes: 1937.047 , D4RL score: 60.141
+Train stats: actor_loss=-2.4476, bc_mse=0.0524, critic_loss=4.0263, q_mean=235.2660
+Episode scores: 65.20, 57.55, 54.50, 53.84, 52.41, 55.84, 55.38, 57.00, 47.84, 101.85
+Episode lengths: 634, 568, 535, 531, 519, 549, 544, 558, 471, 983
+---------------------------------------
+Time steps: 935000
+---------------------------------------
+Evaluation over 10 episodes: 1677.753 , D4RL score: 52.174
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0289, q_mean=235.4796
+Episode scores: 76.45, 54.21, 40.62, 57.26, 49.35, 49.18, 41.08, 55.96, 57.25, 40.38
+Episode lengths: 751, 531, 412, 559, 489, 487, 417, 543, 572, 411
+---------------------------------------
+Time steps: 940000
+---------------------------------------
+Evaluation over 10 episodes: 1868.504 , D4RL score: 58.035
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0085, q_mean=235.2736
+Episode scores: 56.93, 45.42, 57.49, 64.45, 56.86, 58.29, 58.05, 58.73, 65.69, 58.42
+Episode lengths: 565, 453, 573, 628, 567, 592, 580, 592, 640, 580
+---------------------------------------
+Time steps: 945000
+---------------------------------------
+Evaluation over 10 episodes: 1832.922 , D4RL score: 56.941
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0517, q_mean=235.3930
+Episode scores: 56.19, 68.23, 57.17, 50.04, 64.02, 52.88, 58.58, 50.16, 56.20, 55.95
+Episode lengths: 548, 671, 564, 496, 628, 525, 583, 511, 549, 543
+---------------------------------------
+Time steps: 950000
+---------------------------------------
+Evaluation over 10 episodes: 1918.034 , D4RL score: 59.556
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0113, q_mean=235.3738
+Episode scores: 57.98, 58.47, 63.14, 47.21, 44.68, 65.59, 57.37, 57.91, 66.48, 76.75
+Episode lengths: 578, 586, 624, 469, 445, 650, 566, 579, 656, 749
+---------------------------------------
+Time steps: 955000
+---------------------------------------
+Evaluation over 10 episodes: 1978.975 , D4RL score: 61.429
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=4.0625, q_mean=235.3096
+Episode scores: 83.23, 67.46, 61.85, 73.08, 54.97, 59.52, 55.09, 48.76, 54.77, 55.57
+Episode lengths: 813, 665, 609, 710, 544, 593, 540, 481, 537, 545
+---------------------------------------
+Time steps: 960000
+---------------------------------------
+Evaluation over 10 episodes: 1911.407 , D4RL score: 59.353
+Train stats: actor_loss=-2.4479, bc_mse=0.0521, critic_loss=4.0428, q_mean=235.3069
+Episode scores: 48.30, 57.77, 58.26, 56.33, 62.91, 61.87, 75.42, 55.50, 58.69, 58.47
+Episode lengths: 475, 566, 583, 553, 621, 611, 744, 544, 586, 580
+---------------------------------------
+Time steps: 965000
+---------------------------------------
+Evaluation over 10 episodes: 1885.574 , D4RL score: 58.559
+Train stats: actor_loss=-2.4477, bc_mse=0.0523, critic_loss=3.9941, q_mean=235.3966
+Episode scores: 64.53, 95.62, 40.04, 53.00, 81.85, 52.14, 53.19, 55.23, 39.85, 50.13
+Episode lengths: 633, 930, 413, 524, 791, 522, 525, 545, 410, 505
+---------------------------------------
+Time steps: 970000
+---------------------------------------
+Evaluation over 10 episodes: 2035.335 , D4RL score: 63.161
+Train stats: actor_loss=-2.4479, bc_mse=0.0521, critic_loss=4.0217, q_mean=235.3785
+Episode scores: 58.16, 55.53, 54.09, 76.42, 56.85, 57.62, 64.85, 56.30, 49.92, 101.87
+Episode lengths: 579, 547, 535, 743, 561, 567, 634, 559, 506, 1000
+---------------------------------------
+Time steps: 975000
+---------------------------------------
+Evaluation over 10 episodes: 1857.743 , D4RL score: 57.704
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0638, q_mean=235.3497
+Episode scores: 56.04, 43.59, 72.49, 58.17, 53.91, 58.30, 68.69, 49.57, 58.11, 58.17
+Episode lengths: 547, 435, 703, 583, 532, 582, 671, 495, 576, 581
+---------------------------------------
+Time steps: 980000
+---------------------------------------
+Evaluation over 10 episodes: 1741.993 , D4RL score: 54.147
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0911, q_mean=235.4895
+Episode scores: 51.00, 49.36, 49.34, 50.95, 56.62, 49.26, 57.23, 73.06, 50.08, 54.58
+Episode lengths: 515, 504, 504, 514, 553, 504, 566, 716, 510, 538
+---------------------------------------
+Time steps: 985000
+---------------------------------------
+Evaluation over 10 episodes: 1757.678 , D4RL score: 54.629
+Train stats: actor_loss=-2.4480, bc_mse=0.0520, critic_loss=4.0558, q_mean=235.3857
+Episode scores: 58.83, 42.81, 64.76, 56.67, 53.64, 54.77, 40.28, 58.44, 57.88, 58.23
+Episode lengths: 580, 428, 633, 554, 531, 534, 413, 583, 577, 581
+---------------------------------------
+Time steps: 990000
+---------------------------------------
+Evaluation over 10 episodes: 1693.094 , D4RL score: 52.645
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0705, q_mean=235.3883
+Episode scores: 54.93, 54.49, 53.73, 52.36, 50.34, 56.57, 49.14, 48.94, 49.01, 56.94
+Episode lengths: 545, 543, 537, 527, 513, 563, 505, 502, 503, 568
+---------------------------------------
+Time steps: 995000
+---------------------------------------
+Evaluation over 10 episodes: 1992.657 , D4RL score: 61.849
+Train stats: actor_loss=-2.4478, bc_mse=0.0522, critic_loss=4.0736, q_mean=235.3694
+Episode scores: 58.12, 55.02, 75.67, 49.93, 55.87, 55.63, 63.68, 55.20, 64.02, 85.36
+Episode lengths: 578, 540, 739, 505, 550, 556, 628, 548, 629, 827
+---------------------------------------
+Time steps: 1000000
+---------------------------------------
+Evaluation over 10 episodes: 2137.142 , D4RL score: 66.289
+Train stats: actor_loss=-2.4479, bc_mse=0.0521, critic_loss=4.0334, q_mean=235.4879
+Episode scores: 102.24, 56.43, 77.69, 56.09, 57.80, 74.89, 58.03, 60.94, 59.82, 58.96
+Episode lengths: 1000, 564, 768, 561, 580, 726, 582, 609, 595, 595
+---------------------------------------
+Final model saved: models/final_hopper-medium-v2/hopper-medium-v2__seed0__beta0.0__alpha2.5__v2.pt
